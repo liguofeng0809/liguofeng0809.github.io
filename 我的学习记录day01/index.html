@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css" integrity="sha256-jTIdiMuX/e3DGJUGwl3pKSxuc6YOuqtJYkM0bGQESA4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.10.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="HashMap集合嵌套ArrayList集合(如有侵权，请联系qq:1141973834 删除，此仅记录每天所学内容) 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747">
+<meta property="og:type" content="website">
+<meta property="og:title" content="我的学习记录day01">
+<meta property="og:url" content="http://example.com/%E6%88%91%E7%9A%84%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95day01/index.html">
+<meta property="og:site_name" content="1024">
+<meta property="og:description" content="HashMap集合嵌套ArrayList集合(如有侵权，请联系qq:1141973834 删除，此仅记录每天所学内容) 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-10-06T05:49:46.000Z">
+<meta property="article:modified_time" content="2021-10-06T05:56:30.235Z">
+<meta property="article:author" content="feng">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://example.com/%E6%88%91%E7%9A%84%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95day01/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":true,"permalink":"http://example.com/%E6%88%91%E7%9A%84%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95day01/index.html","path":"我的学习记录day01/index.html","title":"我的学习记录day01"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>我的学习记录day01 | 1024
+</title>
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="1024" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">1024</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">与你，与我</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#HashMap%E9%9B%86%E5%90%88%E5%B5%8C%E5%A5%97ArrayList%E9%9B%86%E5%90%88"><span class="nav-number">1.</span> <span class="nav-text">HashMap集合嵌套ArrayList集合</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ArrayList%E9%9B%86%E5%90%88%E5%B5%8C%E5%A5%97HashMap%E9%9B%86%E5%90%88"><span class="nav-number">2.</span> <span class="nav-text">ArrayList集合嵌套HashMap集合</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">feng</p>
+  <div class="site-description" itemprop="description">Furious activity is no substitute for understanding. —— H. H. Williams</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">10</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner page posts-expand">
+
+
+    
+    
+    
+    <div class="post-block" lang="en"><header class="post-header">
+
+<h1 class="post-title" itemprop="name headline">我的学习记录day01
+</h1>
+
+<div class="post-meta-container">
+</div>
+
+</header>
+
+      
+      
+      <div class="post-body">
+          <h2 id="HashMap集合嵌套ArrayList集合"><a href="#HashMap集合嵌套ArrayList集合" class="headerlink" title="HashMap集合嵌套ArrayList集合"></a>HashMap集合嵌套ArrayList集合</h2><p>(如有侵权，请联系qq:1141973834 删除，此仅记录每天所学内容)</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="keyword">import</span> java.util.HashMap;</span><br><span class="line"><span class="keyword">import</span> java.util.Iterator;</span><br><span class="line"><span class="keyword">import</span> java.util.Set;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@program</span>: javalearnCode</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@description</span>: HashMap集合嵌套ArrayList集合。</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span>: chen</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@create</span>: 2018-09-03 11:34</span></span><br><span class="line"><span class="comment">   **/</span></span><br><span class="line">   <span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HashMapArrayListDemo</span> </span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line"></span><br><span class="line">   <span class="comment">/*</span></span><br><span class="line"><span class="comment">   假设HashMap有3个集合是ArrayList：</span></span><br><span class="line"><span class="comment">   三国演义</span></span><br><span class="line"><span class="comment">       诸葛亮</span></span><br><span class="line"><span class="comment">       周瑜</span></span><br><span class="line"><span class="comment">   红楼梦</span></span><br><span class="line"><span class="comment">       黛玉</span></span><br><span class="line"><span class="comment">       宝玉</span></span><br><span class="line"><span class="comment">   西游记</span></span><br><span class="line"><span class="comment">       悟空</span></span><br><span class="line"><span class="comment">       唐僧</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line"></span><br><span class="line">       <span class="comment">//创建集合</span></span><br><span class="line">       HashMap&lt;String, ArrayList&lt;String&gt;&gt; novels= <span class="keyword">new</span> HashMap&lt;String, ArrayList&lt;String&gt;&gt;();</span><br><span class="line">       </span><br><span class="line">       ArrayList&lt;String&gt; sanGuoCharacters= <span class="keyword">new</span> ArrayList&lt;String&gt;();</span><br><span class="line">       sanGuoCharacters.add(<span class="string">&quot;诸葛亮&quot;</span>);</span><br><span class="line">       sanGuoCharacters.add(<span class="string">&quot;周瑜&quot;</span>);</span><br><span class="line">       </span><br><span class="line">       ArrayList&lt;String&gt; xiyoujiCharacters= <span class="keyword">new</span> ArrayList&lt;String&gt;();</span><br><span class="line">       xiyoujiCharacters.add(<span class="string">&quot;悟空&quot;</span>);</span><br><span class="line">       xiyoujiCharacters.add(<span class="string">&quot;唐僧&quot;</span>);</span><br><span class="line">       </span><br><span class="line">       ArrayList&lt;String&gt; hongloumengCharacters= <span class="keyword">new</span> ArrayList&lt;String&gt;();</span><br><span class="line">       hongloumengCharacters.add(<span class="string">&quot;黛玉&quot;</span>);</span><br><span class="line">       hongloumengCharacters.add(<span class="string">&quot;宝玉&quot;</span>);</span><br><span class="line">       </span><br><span class="line">       novels.put(<span class="string">&quot;三国演义&quot;</span>, sanGuoCharacters);</span><br><span class="line">       novels.put(<span class="string">&quot;西游记&quot;</span>, xiyoujiCharacters);</span><br><span class="line">       novels.put(<span class="string">&quot;红楼梦&quot;</span>, hongloumengCharacters);</span><br><span class="line">       </span><br><span class="line">       <span class="comment">//遍历</span></span><br><span class="line">       Set&lt;String&gt; keys= novels.keySet();</span><br><span class="line">       <span class="keyword">for</span>(String key: keys)&#123;</span><br><span class="line">           System.out.println(key);</span><br><span class="line">           ArrayList&lt;String&gt; characters=novels.get(key);</span><br><span class="line">           <span class="comment">//遍历集合，List特有的遍历方式size()和get()结合</span></span><br><span class="line">           <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;characters.size(); ++i)&#123;</span><br><span class="line">               String character= characters.get(i);</span><br><span class="line">               System.out.println(<span class="string">&#x27;\t&#x27;</span>+character);</span><br><span class="line">           &#125;</span><br><span class="line"></span><br><span class="line">   <span class="comment">//            增强for遍历集合</span></span><br><span class="line">   <span class="comment">//            for(String character: characters)&#123;</span></span><br><span class="line">   <span class="comment">//                System.out.println(character);</span></span><br><span class="line">   <span class="comment">//            &#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//            迭代器遍历集合</span></span><br><span class="line"><span class="comment">//            Iterator&lt;String&gt; it= characters.iterator();</span></span><br><span class="line"><span class="comment">//            while(it.hasNext())&#123;</span></span><br><span class="line"><span class="comment">//                String character= it.next();</span></span><br><span class="line"><span class="comment">//                System.out.println(character);</span></span><br><span class="line"><span class="comment">//            &#125;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="ArrayList集合嵌套HashMap集合"><a href="#ArrayList集合嵌套HashMap集合" class="headerlink" title="ArrayList集合嵌套HashMap集合"></a>ArrayList集合嵌套HashMap集合</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="keyword">import</span> java.util.HashMap;</span><br><span class="line"><span class="keyword">import</span> java.util.Set;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@program</span>: javalearnCode</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@description</span>: ArrayList集合嵌套HashMap</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span>: chen</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@create</span>: 2018-09-03 16:29</span></span><br><span class="line"><span class="comment"> **/</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ArraListHashMapDemo</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        <span class="comment">//假设ArrayList有3个集合是HashMap</span></span><br><span class="line">        <span class="comment">/*</span></span><br><span class="line"><span class="comment">        吕布-貂蝉</span></span><br><span class="line"><span class="comment">        周瑜-小乔</span></span><br><span class="line"><span class="comment">        ---------------</span></span><br><span class="line"><span class="comment">        牛魔王-铁扇公主</span></span><br><span class="line"><span class="comment">        玉帝-王母</span></span><br><span class="line"><span class="comment">        ---------------</span></span><br><span class="line"><span class="comment">        贾琏-王熙凤</span></span><br><span class="line"><span class="comment">        贾宝玉-薛宝钗</span></span><br><span class="line"><span class="comment">        ---------------</span></span><br><span class="line"><span class="comment">         */</span></span><br><span class="line">        <span class="comment">//创建集合</span></span><br><span class="line">        ArrayList&lt;HashMap&lt;String, String&gt;&gt; array= <span class="keyword">new</span> ArrayList&lt;HashMap&lt;String, String&gt;&gt;();</span><br><span class="line">        HashMap&lt;String, String&gt; sanguoCouples= <span class="keyword">new</span> HashMap&lt;String, String&gt;();</span><br><span class="line">        sanguoCouples.put(<span class="string">&quot;周瑜&quot;</span>,<span class="string">&quot;小乔&quot;</span>);</span><br><span class="line">        sanguoCouples.put(<span class="string">&quot;吕布&quot;</span>,<span class="string">&quot;貂蝉&quot;</span>);</span><br><span class="line"></span><br><span class="line">        HashMap&lt;String,String&gt; xiyoujiCouples= <span class="keyword">new</span> HashMap&lt;String, String&gt;();</span><br><span class="line">        xiyoujiCouples.put(<span class="string">&quot;牛魔王&quot;</span>,<span class="string">&quot;铁扇公主&quot;</span>);</span><br><span class="line">        xiyoujiCouples.put(<span class="string">&quot;玉帝&quot;</span>,<span class="string">&quot;王母&quot;</span>);</span><br><span class="line"></span><br><span class="line">        HashMap&lt;String, String&gt; hongloumengCouples= <span class="keyword">new</span> HashMap&lt;String, String&gt;();</span><br><span class="line">        hongloumengCouples.put(<span class="string">&quot;贾琏&quot;</span>,<span class="string">&quot;王熙凤&quot;</span>);</span><br><span class="line">        hongloumengCouples.put(<span class="string">&quot;贾宝玉&quot;</span>,<span class="string">&quot;薛宝钗&quot;</span>);</span><br><span class="line"></span><br><span class="line">        array.add(sanguoCouples);</span><br><span class="line">        array.add(xiyoujiCouples);</span><br><span class="line">        array.add(hongloumengCouples);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//遍历集合</span></span><br><span class="line">        <span class="comment">//获取ArrayList集合中每个HashMap元素</span></span><br><span class="line">        <span class="keyword">for</span>(HashMap&lt;String, String&gt; couples: array)&#123;</span><br><span class="line">            <span class="comment">//先获取所有键</span></span><br><span class="line">            Set&lt;String&gt; husbands=couples.keySet();</span><br><span class="line">            <span class="keyword">for</span>(String husband: husbands)&#123;</span><br><span class="line">                <span class="comment">//根据键获取值</span></span><br><span class="line">                String wife= couples.get(husband);</span><br><span class="line">                System.out.println(husband+<span class="string">&quot;-&quot;</span>+wife);</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            System.out.println(<span class="string">&quot;---------------&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+      </div>
+      
+      
+      
+    </div>
+
+    
+    
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">feng</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
