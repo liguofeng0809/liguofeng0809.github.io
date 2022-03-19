@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>JavaWeb基础知识</title>
+    <url>/2021/10/24/JavaWeb%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</url>
+    <content><![CDATA[<h2 id="Junit"><a href="#Junit" class="headerlink" title="Junit"></a>Junit</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">* 测试分类：</span><br><span class="line">	1. 黑盒测试：不需要写代码，给输入值，看程序是否能够输出期望的值。</span><br><span class="line">	2. 白盒测试：需要写代码的。关注程序具体的执行流程。</span><br><span class="line"></span><br><span class="line">* Junit使用：白盒测试</span><br><span class="line">	* 步骤：</span><br><span class="line">		1. 定义一个测试类(测试用例)</span><br><span class="line">			* 建议：</span><br><span class="line">				* 测试类名：被测试的类名Test		CalculatorTest</span><br><span class="line">				* 包名：xxx.xxx.xx.test		cn.itcast.test</span><br><span class="line"></span><br><span class="line">		2. 定义测试方法：可以独立运行</span><br><span class="line">			* 建议：</span><br><span class="line">				* 方法名：test测试的方法名		testAdd()  </span><br><span class="line">				* 返回值：void</span><br><span class="line">				* 参数列表：空参</span><br><span class="line"></span><br><span class="line">		3. 给方法加@Test</span><br><span class="line">		4. 导入junit依赖环境</span><br><span class="line"></span><br><span class="line">	* 判定结果：</span><br><span class="line">		* 红色：失败</span><br><span class="line">		* 绿色：成功</span><br><span class="line">		* 一般我们会使用断言操作来处理结果</span><br><span class="line">			* Assert.assertEquals(期望的结果,运算的结果);</span><br><span class="line"></span><br><span class="line">	* 补充：</span><br><span class="line">		* @Before:</span><br><span class="line">			* 修饰的方法会在测试方法之前被自动执行</span><br><span class="line">		* @After:</span><br><span class="line">			* 修饰的方法会在测试方法执行之后自动被执行</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>JavaWeb基础</category>
+      </categories>
+      <tags>
+        <tag>JavaWeb基础</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>JavaSE知识体系</title>
     <url>/2021/12/11/JavaSE%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB/</url>
     <content><![CDATA[<h1 id="JavaSE知识梳理"><a href="#JavaSE知识梳理" class="headerlink" title="JavaSE知识梳理"></a>JavaSE知识梳理</h1><h3 id="2-数据类型"><a href="#2-数据类型" class="headerlink" title="2. 数据类型"></a>2. 数据类型</h3><h4 id="2-1-基本类型"><a href="#2-1-基本类型" class="headerlink" title="2.1 基本类型"></a>2.1 基本类型</h4><table>
@@ -120,19 +133,6 @@
 ]]></content>
       <tags>
         <tag>JavaSE</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>JavaWeb基础知识</title>
-    <url>/2021/10/24/JavaWeb%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</url>
-    <content><![CDATA[<h2 id="Junit"><a href="#Junit" class="headerlink" title="Junit"></a>Junit</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">* 测试分类：</span><br><span class="line">	1. 黑盒测试：不需要写代码，给输入值，看程序是否能够输出期望的值。</span><br><span class="line">	2. 白盒测试：需要写代码的。关注程序具体的执行流程。</span><br><span class="line"></span><br><span class="line">* Junit使用：白盒测试</span><br><span class="line">	* 步骤：</span><br><span class="line">		1. 定义一个测试类(测试用例)</span><br><span class="line">			* 建议：</span><br><span class="line">				* 测试类名：被测试的类名Test		CalculatorTest</span><br><span class="line">				* 包名：xxx.xxx.xx.test		cn.itcast.test</span><br><span class="line"></span><br><span class="line">		2. 定义测试方法：可以独立运行</span><br><span class="line">			* 建议：</span><br><span class="line">				* 方法名：test测试的方法名		testAdd()  </span><br><span class="line">				* 返回值：void</span><br><span class="line">				* 参数列表：空参</span><br><span class="line"></span><br><span class="line">		3. 给方法加@Test</span><br><span class="line">		4. 导入junit依赖环境</span><br><span class="line"></span><br><span class="line">	* 判定结果：</span><br><span class="line">		* 红色：失败</span><br><span class="line">		* 绿色：成功</span><br><span class="line">		* 一般我们会使用断言操作来处理结果</span><br><span class="line">			* Assert.assertEquals(期望的结果,运算的结果);</span><br><span class="line"></span><br><span class="line">	* 补充：</span><br><span class="line">		* @Before:</span><br><span class="line">			* 修饰的方法会在测试方法之前被自动执行</span><br><span class="line">		* @After:</span><br><span class="line">			* 修饰的方法会在测试方法执行之后自动被执行</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>JavaWeb基础</category>
-      </categories>
-      <tags>
-        <tag>JavaWeb基础</tag>
       </tags>
   </entry>
   <entry>
@@ -289,6 +289,51 @@
       </tags>
   </entry>
   <entry>
+    <title>知识辨析</title>
+    <url>/2021/10/22/%E7%9F%A5%E8%AF%86%E8%BE%A8%E6%9E%90/</url>
+    <content><![CDATA[<h4 id="与-equals-重要"><a href="#与-equals-重要" class="headerlink" title="== 与 equals(重要)"></a>== 与 equals(重要)</h4><h5 id=""><a href="#" class="headerlink" title="== :"></a>== :</h5><p>  它的作⽤是判断两个对象的地址是不是相等。即，判断两个对象是不是同⼀个对象(基本数据<br>类型==⽐较的是值，引⽤数据类型==⽐较的是内存地址)。</p>
+<h5 id="equals"><a href="#equals" class="headerlink" title="equals:"></a>equals:</h5><p>它的作⽤也是判断两个对象是否相等。但它⼀般有两种使⽤情况：<br>情况 1：类没有覆盖 equals() ⽅法。则通过 equals() ⽐᫾该类的两个对象时，等价于通过“==”⽐较这两个对象。</p>
+<p>情况 2：类覆盖了 equals() ⽅法。⼀般，我们都覆盖 equals() ⽅法来⽐᫾两个对象的内容是<br>否相等；若它们的内容相等，则返回 true (即，认为这两个对象相等)。</p>
+<h5 id="说明"><a href="#说明" class="headerlink" title="说明:"></a>说明:</h5><ul>
+<li>String 中的 equals ⽅法是被重写过的，因为 object 的 equals ⽅法是⽐᫾的对象的内存地 址，⽽ String 的 equals ⽅法⽐᫾的是对象的值。</li>
+<li> 当创建 String 类型的对象时，虚拟机会在常量池中查找有没有已经存在的值和要创建的值相 同的对象，如果有就把它赋给当前引⽤。如果没有就在常量池中重新创建⼀个 String 对象。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>面试</category>
+      </categories>
+      <tags>
+        <tag>Java基础</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>学习日记（for循环增强）</title>
+    <url>/2021/10/07/%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0%EF%BC%88for%E5%BE%AA%E7%8E%AF%E5%A2%9E%E5%BC%BA%EF%BC%89/</url>
+    <content><![CDATA[<h1 id="增强for循环：简化迭代器书写"><a href="#增强for循环：简化迭代器书写" class="headerlink" title="增强for循环：简化迭代器书写"></a>增强for循环：简化迭代器书写</h1><h2 id="一、增强for循环的简单实例"><a href="#一、增强for循环的简单实例" class="headerlink" title="一、增强for循环的简单实例"></a>一、增强for循环的简单实例</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">	    <span class="keyword">int</span> arr[] = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line">	    <span class="comment">/**</span></span><br><span class="line"><span class="comment">	    *增强for</span></span><br><span class="line"><span class="comment">	    */</span></span><br><span class="line">	    <span class="keyword">for</span>(<span class="keyword">int</span> num : arr)&#123;</span><br><span class="line">	     System.out.println(num);</span><br><span class="line">	    &#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="二、增强for循环的几种应用场景"><a href="#二、增强for循环的几种应用场景" class="headerlink" title="二、增强for循环的几种应用场景"></a>二、增强for循环的几种应用场景</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> *增强for</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo</span></span>&#123;</span><br><span class="line"><span class="comment">//数组的简单应用</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test1</span><span class="params">()</span></span>&#123;</span><br><span class="line">		<span class="keyword">int</span> arr[] = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> num : arr)&#123;</span><br><span class="line">			System.out.println(num);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//链表的简单应用</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test2</span><span class="params">()</span></span>&#123;</span><br><span class="line">		List list = <span class="keyword">new</span> ArrayList();</span><br><span class="line">		list.add(<span class="number">1</span>);</span><br><span class="line">		list.add(<span class="number">2</span>);</span><br><span class="line">		list.add(<span class="number">3</span>);</span><br><span class="line">		<span class="keyword">for</span>(Object obj : list)&#123;</span><br><span class="line">			 <span class="keyword">int</span> i = (Integer)obj;</span><br><span class="line">			 System.out.println(i);</span><br><span class="line">		&#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//map的应用实例</span></span><br><span class="line">	<span class="comment">//传统方式1</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test3</span><span class="params">()</span></span>&#123;</span><br><span class="line">		Map map = <span class="keyword">new</span> LinkedHashMap();<span class="comment">//不同于HashMap的无顺序形式</span></span><br><span class="line">		map.put(<span class="string">&quot;1&quot;</span>,<span class="string">&quot;aaa&quot;</span>);</span><br><span class="line">		map.put(<span class="string">&quot;2&quot;</span>,<span class="string">&quot;bbb&quot;</span>);</span><br><span class="line">		map.put(<span class="string">&quot;3&quot;</span>,<span class="string">&quot;ccc&quot;</span>);</span><br><span class="line">		</span><br><span class="line">		Set set = map.keySet();</span><br><span class="line">		Iterator  it = set.iterator();</span><br><span class="line">		<span class="keyword">while</span>(it.hasNext())&#123;</span><br><span class="line">			String key = (String)it.next();</span><br><span class="line">			String value = (String)map.get(key);</span><br><span class="line">			System.out.println(key + <span class="string">&quot;=&quot;</span> + value);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//传统方式2</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test4</span><span class="params">()</span></span>&#123;</span><br><span class="line">	Map map = <span class="keyword">new</span> LinkedHashMap();</span><br><span class="line">	map.put(<span class="string">&quot;1&quot;</span>,<span class="string">&quot;aaa&quot;</span>);</span><br><span class="line">	map.put(<span class="string">&quot;2&quot;</span>,<span class="string">&quot;bbb&quot;</span>);</span><br><span class="line">	map.put(<span class="string">&quot;3&quot;</span>,<span class="string">&quot;ccc&quot;</span>);</span><br><span class="line">	</span><br><span class="line">	Set set = map.entrySet();</span><br><span class="line">	Iterator  it = set.iterator();</span><br><span class="line">	<span class="keyword">while</span>(it.hasNext())&#123;</span><br><span class="line">		Map.Entry entry = (Entry)it.next();</span><br><span class="line">		String key = (String)entry.getKey();</span><br><span class="line">		String value = (String)entry.getValue();</span><br><span class="line">		System.out.println(key + <span class="string">&quot;=&quot;</span> + value);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//增强for循环应用于map的第一种方法</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test5</span><span class="params">()</span></span>&#123;</span><br><span class="line">	Map map = <span class="keyword">new</span> LinkedHashMap();</span><br><span class="line">	map.put(<span class="string">&quot;1&quot;</span>,<span class="string">&quot;aaa&quot;</span>);</span><br><span class="line">	map.put(<span class="string">&quot;2&quot;</span>,<span class="string">&quot;bbb&quot;</span>);</span><br><span class="line">	map.put(<span class="string">&quot;3&quot;</span>,<span class="string">&quot;ccc&quot;</span>);</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">for</span>(Object obj : map.keySet())&#123;</span><br><span class="line">		String key = (String) obj;</span><br><span class="line">		Stringg value = (String) map.get(key);</span><br><span class="line">		System.out.println(key + <span class="string">&quot;=&quot;</span> + value);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">	<span class="comment">//增强for循环应用于map的第二种方法</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test5</span><span class="params">()</span></span>&#123;</span><br><span class="line">		Map map = <span class="keyword">new</span> LinkedHashMap();</span><br><span class="line">		map.put(<span class="string">&quot;1&quot;</span>,<span class="string">&quot;aaa&quot;</span>);</span><br><span class="line">		map.put(<span class="string">&quot;2&quot;</span>,<span class="string">&quot;bbb&quot;</span>);</span><br><span class="line">		map.put(<span class="string">&quot;3&quot;</span>,<span class="string">&quot;ccc&quot;</span>);</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">for</span>(Object obj : map.entrySet())&#123;</span><br><span class="line">			Map.Entry entry = (entry) obj;</span><br><span class="line">			String key = (String) entry.getKey();</span><br><span class="line">			Stringg value = (String) entry.getVnalue();</span><br><span class="line">			System.out.println(key + <span class="string">&quot;=&quot;</span> + value);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="三、增强for循环需要注意的问题"><a href="#三、增强for循环需要注意的问题" class="headerlink" title="三、增强for循环需要注意的问题"></a>三、增强for循环需要注意的问题</h2><p>1.只适合取数据，不能更改数据；</p>
+<p>2.只用于数组，或实现Iterable接口的集合类上；set，list。</p>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>Java基础</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>字节流和字符流的用法</title>
     <url>/2021/10/11/%E5%AD%97%E8%8A%82%E6%B5%81%E5%92%8C%E5%AD%97%E7%AC%A6%E6%B5%81%E7%9A%84%E7%94%A8%E6%B3%95/</url>
     <content><![CDATA[<h3 id="字节流"><a href="#字节流" class="headerlink" title="字节流"></a>字节流</h3><p>作用:字节流可以将文字图片音频等等文件转成字节进行数据传输<br>分为:<br>OutputStream: 输出流,写文件<br>InputStream: 输入流,读文件</p>
@@ -347,48 +392,24 @@
       </tags>
   </entry>
   <entry>
-    <title>学习日记（for循环增强）</title>
-    <url>/2021/10/07/%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0%EF%BC%88for%E5%BE%AA%E7%8E%AF%E5%A2%9E%E5%BC%BA%EF%BC%89/</url>
-    <content><![CDATA[<h1 id="增强for循环：简化迭代器书写"><a href="#增强for循环：简化迭代器书写" class="headerlink" title="增强for循环：简化迭代器书写"></a>增强for循环：简化迭代器书写</h1><h2 id="一、增强for循环的简单实例"><a href="#一、增强for循环的简单实例" class="headerlink" title="一、增强for循环的简单实例"></a>一、增强for循环的简单实例</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">	    <span class="keyword">int</span> arr[] = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line">	    <span class="comment">/**</span></span><br><span class="line"><span class="comment">	    *增强for</span></span><br><span class="line"><span class="comment">	    */</span></span><br><span class="line">	    <span class="keyword">for</span>(<span class="keyword">int</span> num : arr)&#123;</span><br><span class="line">	     System.out.println(num);</span><br><span class="line">	    &#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="二、增强for循环的几种应用场景"><a href="#二、增强for循环的几种应用场景" class="headerlink" title="二、增强for循环的几种应用场景"></a>二、增强for循环的几种应用场景</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> *增强for</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo</span></span>&#123;</span><br><span class="line"><span class="comment">//数组的简单应用</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test1</span><span class="params">()</span></span>&#123;</span><br><span class="line">		<span class="keyword">int</span> arr[] = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> num : arr)&#123;</span><br><span class="line">			System.out.println(num);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//链表的简单应用</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test2</span><span class="params">()</span></span>&#123;</span><br><span class="line">		List list = <span class="keyword">new</span> ArrayList();</span><br><span class="line">		list.add(<span class="number">1</span>);</span><br><span class="line">		list.add(<span class="number">2</span>);</span><br><span class="line">		list.add(<span class="number">3</span>);</span><br><span class="line">		<span class="keyword">for</span>(Object obj : list)&#123;</span><br><span class="line">			 <span class="keyword">int</span> i = (Integer)obj;</span><br><span class="line">			 System.out.println(i);</span><br><span class="line">		&#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//map的应用实例</span></span><br><span class="line">	<span class="comment">//传统方式1</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test3</span><span class="params">()</span></span>&#123;</span><br><span class="line">		Map map = <span class="keyword">new</span> LinkedHashMap();<span class="comment">//不同于HashMap的无顺序形式</span></span><br><span class="line">		map.put(<span class="string">&quot;1&quot;</span>,<span class="string">&quot;aaa&quot;</span>);</span><br><span class="line">		map.put(<span class="string">&quot;2&quot;</span>,<span class="string">&quot;bbb&quot;</span>);</span><br><span class="line">		map.put(<span class="string">&quot;3&quot;</span>,<span class="string">&quot;ccc&quot;</span>);</span><br><span class="line">		</span><br><span class="line">		Set set = map.keySet();</span><br><span class="line">		Iterator  it = set.iterator();</span><br><span class="line">		<span class="keyword">while</span>(it.hasNext())&#123;</span><br><span class="line">			String key = (String)it.next();</span><br><span class="line">			String value = (String)map.get(key);</span><br><span class="line">			System.out.println(key + <span class="string">&quot;=&quot;</span> + value);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//传统方式2</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test4</span><span class="params">()</span></span>&#123;</span><br><span class="line">	Map map = <span class="keyword">new</span> LinkedHashMap();</span><br><span class="line">	map.put(<span class="string">&quot;1&quot;</span>,<span class="string">&quot;aaa&quot;</span>);</span><br><span class="line">	map.put(<span class="string">&quot;2&quot;</span>,<span class="string">&quot;bbb&quot;</span>);</span><br><span class="line">	map.put(<span class="string">&quot;3&quot;</span>,<span class="string">&quot;ccc&quot;</span>);</span><br><span class="line">	</span><br><span class="line">	Set set = map.entrySet();</span><br><span class="line">	Iterator  it = set.iterator();</span><br><span class="line">	<span class="keyword">while</span>(it.hasNext())&#123;</span><br><span class="line">		Map.Entry entry = (Entry)it.next();</span><br><span class="line">		String key = (String)entry.getKey();</span><br><span class="line">		String value = (String)entry.getValue();</span><br><span class="line">		System.out.println(key + <span class="string">&quot;=&quot;</span> + value);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//增强for循环应用于map的第一种方法</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test5</span><span class="params">()</span></span>&#123;</span><br><span class="line">	Map map = <span class="keyword">new</span> LinkedHashMap();</span><br><span class="line">	map.put(<span class="string">&quot;1&quot;</span>,<span class="string">&quot;aaa&quot;</span>);</span><br><span class="line">	map.put(<span class="string">&quot;2&quot;</span>,<span class="string">&quot;bbb&quot;</span>);</span><br><span class="line">	map.put(<span class="string">&quot;3&quot;</span>,<span class="string">&quot;ccc&quot;</span>);</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">for</span>(Object obj : map.keySet())&#123;</span><br><span class="line">		String key = (String) obj;</span><br><span class="line">		Stringg value = (String) map.get(key);</span><br><span class="line">		System.out.println(key + <span class="string">&quot;=&quot;</span> + value);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">	<span class="comment">//增强for循环应用于map的第二种方法</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test5</span><span class="params">()</span></span>&#123;</span><br><span class="line">		Map map = <span class="keyword">new</span> LinkedHashMap();</span><br><span class="line">		map.put(<span class="string">&quot;1&quot;</span>,<span class="string">&quot;aaa&quot;</span>);</span><br><span class="line">		map.put(<span class="string">&quot;2&quot;</span>,<span class="string">&quot;bbb&quot;</span>);</span><br><span class="line">		map.put(<span class="string">&quot;3&quot;</span>,<span class="string">&quot;ccc&quot;</span>);</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">for</span>(Object obj : map.entrySet())&#123;</span><br><span class="line">			Map.Entry entry = (entry) obj;</span><br><span class="line">			String key = (String) entry.getKey();</span><br><span class="line">			Stringg value = (String) entry.getVnalue();</span><br><span class="line">			System.out.println(key + <span class="string">&quot;=&quot;</span> + value);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="三、增强for循环需要注意的问题"><a href="#三、增强for循环需要注意的问题" class="headerlink" title="三、增强for循环需要注意的问题"></a>三、增强for循环需要注意的问题</h2><p>1.只适合取数据，不能更改数据；</p>
-<p>2.只用于数组，或实现Iterable接口的集合类上；set，list。</p>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>Java基础</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>知识辨析</title>
-    <url>/2021/10/22/%E7%9F%A5%E8%AF%86%E8%BE%A8%E6%9E%90/</url>
-    <content><![CDATA[<h4 id="与-equals-重要"><a href="#与-equals-重要" class="headerlink" title="== 与 equals(重要)"></a>== 与 equals(重要)</h4><h5 id=""><a href="#" class="headerlink" title="== :"></a>== :</h5><p>  它的作⽤是判断两个对象的地址是不是相等。即，判断两个对象是不是同⼀个对象(基本数据<br>类型==⽐较的是值，引⽤数据类型==⽐较的是内存地址)。</p>
-<h5 id="equals"><a href="#equals" class="headerlink" title="equals:"></a>equals:</h5><p>它的作⽤也是判断两个对象是否相等。但它⼀般有两种使⽤情况：<br>情况 1：类没有覆盖 equals() ⽅法。则通过 equals() ⽐᫾该类的两个对象时，等价于通过“==”⽐较这两个对象。</p>
-<p>情况 2：类覆盖了 equals() ⽅法。⼀般，我们都覆盖 equals() ⽅法来⽐᫾两个对象的内容是<br>否相等；若它们的内容相等，则返回 true (即，认为这两个对象相等)。</p>
-<h5 id="说明"><a href="#说明" class="headerlink" title="说明:"></a>说明:</h5><ul>
-<li>String 中的 equals ⽅法是被重写过的，因为 object 的 equals ⽅法是⽐᫾的对象的内存地 址，⽽ String 的 equals ⽅法⽐᫾的是对象的值。</li>
-<li> 当创建 String 类型的对象时，虚拟机会在常量池中查找有没有已经存在的值和要创建的值相 同的对象，如果有就把它赋给当前引⽤。如果没有就在常量池中重新创建⼀个 String 对象。</li>
-</ul>
+    <title>面试内容总结</title>
+    <url>/2021/10/05/%E9%9D%A2%E8%AF%95%E5%86%85%E5%AE%B9%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<h1 id="面试题01"><a href="#面试题01" class="headerlink" title="面试题01"></a>面试题01</h1><p>请你自我介绍一下你自己：</p>
+<p>回答提示：</p>
+<p>1、一般人回答这个问题过于平常，只说姓名、年龄、爱好、工作经验，这些在简历上都有，其实，企业最希望知道的是求职者能否胜任工作，包括：最强的技能、最深入研究的知识领域、个性中最积极的部分、做过的最成功的事，主要的成就等，这些都可以</p>
+<p>2、和学习无关，也可以和学习有关，但要突出积极的个性和做事的能力，说得合情合理企业才会相信。企业很重视一个人的礼貌，求职者要尊重考官，在回答每个问题之后都说一句“谢谢”。企业喜欢有礼貌的求职者。</p>
+<p>范例;</p>
+<p>考官好，我是计算机专业的面试者xxx，我此次应聘的职位是IT行业的软件工程师，这份工作不仅与我的专业对口，同时也是我的特长与兴趣所在。现在我就从以下三个方面介绍自己：</p>
+<p>​        1)学习能力：我有较强的科研能力，能熟练的使用‘eclipse’、‘idea’等编程相关软件，熟练并掌握MySQL数据库、Spring Boot框架等。</p>
+<p>​        2)实践能力：我的专长是软件开发，我希望能从事这方面的工作经验，并且我曾经发过多个系统，如人事档案管理系统,工资管理系统等等。</p>
+<p>​        3)交际能力：我的性格沉稳，能坐得住，对IT行业的工作，具有非常好的适应能力，而且为人谦和，具有很强的组织和协调能力 ，富有的事业心和责任感使我能够面对任何困难和挑战。</p>
+<p>　　从以上的简单自我介绍，我希望公司能给我一个展示自己能力的机会，让我我可以学以致用，同时我也很欣赏XX公司的企业文化与工作环境。我愿意成为企业一员，为企业的发展贡献自己的一份力量。 我的职业生涯目标是，做一个既懂技术，又懂业务的复合型人才。</p>
 ]]></content>
       <categories>
         <category>面试</category>
       </categories>
       <tags>
-        <tag>Java基础</tag>
+        <tag>面试题</tag>
       </tags>
   </entry>
   <entry>
@@ -423,27 +444,6 @@
       </categories>
       <tags>
         <tag>Java基础</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>面试内容总结</title>
-    <url>/2021/10/05/%E9%9D%A2%E8%AF%95%E5%86%85%E5%AE%B9%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<h1 id="面试题01"><a href="#面试题01" class="headerlink" title="面试题01"></a>面试题01</h1><p>请你自我介绍一下你自己：</p>
-<p>回答提示：</p>
-<p>1、一般人回答这个问题过于平常，只说姓名、年龄、爱好、工作经验，这些在简历上都有，其实，企业最希望知道的是求职者能否胜任工作，包括：最强的技能、最深入研究的知识领域、个性中最积极的部分、做过的最成功的事，主要的成就等，这些都可以</p>
-<p>2、和学习无关，也可以和学习有关，但要突出积极的个性和做事的能力，说得合情合理企业才会相信。企业很重视一个人的礼貌，求职者要尊重考官，在回答每个问题之后都说一句“谢谢”。企业喜欢有礼貌的求职者。</p>
-<p>范例;</p>
-<p>考官好，我是计算机专业的面试者xxx，我此次应聘的职位是IT行业的软件工程师，这份工作不仅与我的专业对口，同时也是我的特长与兴趣所在。现在我就从以下三个方面介绍自己：</p>
-<p>​        1)学习能力：我有较强的科研能力，能熟练的使用‘eclipse’、‘idea’等编程相关软件，熟练并掌握MySQL数据库、Spring Boot框架等。</p>
-<p>​        2)实践能力：我的专长是软件开发，我希望能从事这方面的工作经验，并且我曾经发过多个系统，如人事档案管理系统,工资管理系统等等。</p>
-<p>​        3)交际能力：我的性格沉稳，能坐得住，对IT行业的工作，具有非常好的适应能力，而且为人谦和，具有很强的组织和协调能力 ，富有的事业心和责任感使我能够面对任何困难和挑战。</p>
-<p>　　从以上的简单自我介绍，我希望公司能给我一个展示自己能力的机会，让我我可以学以致用，同时我也很欣赏XX公司的企业文化与工作环境。我愿意成为企业一员，为企业的发展贡献自己的一份力量。 我的职业生涯目标是，做一个既懂技术，又懂业务的复合型人才。</p>
-]]></content>
-      <categories>
-        <category>面试</category>
-      </categories>
-      <tags>
-        <tag>面试题</tag>
       </tags>
   </entry>
 </search>
