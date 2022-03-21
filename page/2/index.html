@@ -131,18 +131,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-count">12</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -171,6 +171,106 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/10/07/%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0%EF%BC%88for%E5%BE%AA%E7%8E%AF%E5%A2%9E%E5%BC%BA%EF%BC%89/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="feng">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="1024">
+      <meta itemprop="description" content="只有时时刻刻为将要到来的机会做准备，才不会错过那一次次的机会……">
+    </span>
+    
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 1024">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/10/07/%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0%EF%BC%88for%E5%BE%AA%E7%8E%AF%E5%A2%9E%E5%BC%BA%EF%BC%89/" class="post-title-link" itemprop="url">学习日记（for循环增强）</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-10-07 00:00:00" itemprop="dateCreated datePublished" datetime="2021-10-07T00:00:00+08:00">2021-10-07</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2021-10-10 19:15:00" itemprop="dateModified" datetime="2021-10-10T19:15:00+08:00">2021-10-10</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Java%E5%9F%BA%E7%A1%80/" itemprop="url" rel="index"><span itemprop="name">Java基础</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="增强for循环：简化迭代器书写"><a href="#增强for循环：简化迭代器书写" class="headerlink" title="增强for循环：简化迭代器书写"></a>增强for循环：简化迭代器书写</h1><h2 id="一、增强for循环的简单实例"><a href="#一、增强for循环的简单实例" class="headerlink" title="一、增强for循环的简单实例"></a>一、增强for循环的简单实例</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">	    <span class="keyword">int</span> arr[] = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line">	    <span class="comment">/**</span></span><br><span class="line"><span class="comment">	    *增强for</span></span><br><span class="line"><span class="comment">	    */</span></span><br><span class="line">	    <span class="keyword">for</span>(<span class="keyword">int</span> num : arr)&#123;</span><br><span class="line">	     System.out.println(num);</span><br><span class="line">	    &#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="二、增强for循环的几种应用场景"><a href="#二、增强for循环的几种应用场景" class="headerlink" title="二、增强for循环的几种应用场景"></a>二、增强for循环的几种应用场景</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> *增强for</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo</span></span>&#123;</span><br><span class="line"><span class="comment">//数组的简单应用</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test1</span><span class="params">()</span></span>&#123;</span><br><span class="line">		<span class="keyword">int</span> arr[] = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> num : arr)&#123;</span><br><span class="line">			System.out.println(num);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//链表的简单应用</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test2</span><span class="params">()</span></span>&#123;</span><br><span class="line">		List list = <span class="keyword">new</span> ArrayList();</span><br><span class="line">		list.add(<span class="number">1</span>);</span><br><span class="line">		list.add(<span class="number">2</span>);</span><br><span class="line">		list.add(<span class="number">3</span>);</span><br><span class="line">		<span class="keyword">for</span>(Object obj : list)&#123;</span><br><span class="line">			 <span class="keyword">int</span> i = (Integer)obj;</span><br><span class="line">			 System.out.println(i);</span><br><span class="line">		&#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//map的应用实例</span></span><br><span class="line">	<span class="comment">//传统方式1</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test3</span><span class="params">()</span></span>&#123;</span><br><span class="line">		Map map = <span class="keyword">new</span> LinkedHashMap();<span class="comment">//不同于HashMap的无顺序形式</span></span><br><span class="line">		map.put(<span class="string">&quot;1&quot;</span>,<span class="string">&quot;aaa&quot;</span>);</span><br><span class="line">		map.put(<span class="string">&quot;2&quot;</span>,<span class="string">&quot;bbb&quot;</span>);</span><br><span class="line">		map.put(<span class="string">&quot;3&quot;</span>,<span class="string">&quot;ccc&quot;</span>);</span><br><span class="line">		</span><br><span class="line">		Set set = map.keySet();</span><br><span class="line">		Iterator  it = set.iterator();</span><br><span class="line">		<span class="keyword">while</span>(it.hasNext())&#123;</span><br><span class="line">			String key = (String)it.next();</span><br><span class="line">			String value = (String)map.get(key);</span><br><span class="line">			System.out.println(key + <span class="string">&quot;=&quot;</span> + value);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//传统方式2</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test4</span><span class="params">()</span></span>&#123;</span><br><span class="line">	Map map = <span class="keyword">new</span> LinkedHashMap();</span><br><span class="line">	map.put(<span class="string">&quot;1&quot;</span>,<span class="string">&quot;aaa&quot;</span>);</span><br><span class="line">	map.put(<span class="string">&quot;2&quot;</span>,<span class="string">&quot;bbb&quot;</span>);</span><br><span class="line">	map.put(<span class="string">&quot;3&quot;</span>,<span class="string">&quot;ccc&quot;</span>);</span><br><span class="line">	</span><br><span class="line">	Set set = map.entrySet();</span><br><span class="line">	Iterator  it = set.iterator();</span><br><span class="line">	<span class="keyword">while</span>(it.hasNext())&#123;</span><br><span class="line">		Map.Entry entry = (Entry)it.next();</span><br><span class="line">		String key = (String)entry.getKey();</span><br><span class="line">		String value = (String)entry.getValue();</span><br><span class="line">		System.out.println(key + <span class="string">&quot;=&quot;</span> + value);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//增强for循环应用于map的第一种方法</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test5</span><span class="params">()</span></span>&#123;</span><br><span class="line">	Map map = <span class="keyword">new</span> LinkedHashMap();</span><br><span class="line">	map.put(<span class="string">&quot;1&quot;</span>,<span class="string">&quot;aaa&quot;</span>);</span><br><span class="line">	map.put(<span class="string">&quot;2&quot;</span>,<span class="string">&quot;bbb&quot;</span>);</span><br><span class="line">	map.put(<span class="string">&quot;3&quot;</span>,<span class="string">&quot;ccc&quot;</span>);</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">for</span>(Object obj : map.keySet())&#123;</span><br><span class="line">		String key = (String) obj;</span><br><span class="line">		Stringg value = (String) map.get(key);</span><br><span class="line">		System.out.println(key + <span class="string">&quot;=&quot;</span> + value);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">	<span class="comment">//增强for循环应用于map的第二种方法</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test5</span><span class="params">()</span></span>&#123;</span><br><span class="line">		Map map = <span class="keyword">new</span> LinkedHashMap();</span><br><span class="line">		map.put(<span class="string">&quot;1&quot;</span>,<span class="string">&quot;aaa&quot;</span>);</span><br><span class="line">		map.put(<span class="string">&quot;2&quot;</span>,<span class="string">&quot;bbb&quot;</span>);</span><br><span class="line">		map.put(<span class="string">&quot;3&quot;</span>,<span class="string">&quot;ccc&quot;</span>);</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">for</span>(Object obj : map.entrySet())&#123;</span><br><span class="line">			Map.Entry entry = (entry) obj;</span><br><span class="line">			String key = (String) entry.getKey();</span><br><span class="line">			Stringg value = (String) entry.getVnalue();</span><br><span class="line">			System.out.println(key + <span class="string">&quot;=&quot;</span> + value);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="三、增强for循环需要注意的问题"><a href="#三、增强for循环需要注意的问题" class="headerlink" title="三、增强for循环需要注意的问题"></a>三、增强for循环需要注意的问题</h2><p>1.只适合取数据，不能更改数据；</p>
+<p>2.只用于数组，或实现Iterable接口的集合类上；set，list。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 

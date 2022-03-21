@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://example.com/2022/03/19/MySQL%E5%9F%BA%E7%A1%80/</loc>
+    
+    <lastmod>2022-03-21</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://example.com/2022/03/19/%E7%8E%AB%E7%91%B0%E5%B0%91%E5%B9%B4/</loc>
     
     <lastmod>2022-03-19</lastmod>
@@ -116,7 +123,7 @@
 
   <url>
     <loc>http://example.com/</loc>
-    <lastmod>2022-03-19</lastmod>
+    <lastmod>2022-03-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -124,35 +131,42 @@
   
   <url>
     <loc>http://example.com/tags/JavaSE/</loc>
-    <lastmod>2022-03-19</lastmod>
+    <lastmod>2022-03-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/JavaWeb%E5%9F%BA%E7%A1%80/</loc>
-    <lastmod>2022-03-19</lastmod>
+    <lastmod>2022-03-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/Java%E5%9F%BA%E7%A1%80/</loc>
-    <lastmod>2022-03-19</lastmod>
+    <lastmod>2022-03-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/%E4%BA%94%E6%9C%88%E5%A4%A9/</loc>
-    <lastmod>2022-03-19</lastmod>
+    <lastmod>2022-03-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/</loc>
-    <lastmod>2022-03-19</lastmod>
+    <lastmod>2022-03-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/MySQL/</loc>
+    <lastmod>2022-03-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -161,35 +175,42 @@
   
   <url>
     <loc>http://example.com/categories/JavaWeb%E5%9F%BA%E7%A1%80/</loc>
-    <lastmod>2022-03-19</lastmod>
+    <lastmod>2022-03-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/categories/Java%E5%9F%BA%E7%A1%80/</loc>
-    <lastmod>2022-03-19</lastmod>
+    <lastmod>2022-03-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/categories/%E9%9B%86%E5%90%88/</loc>
-    <lastmod>2022-03-19</lastmod>
+    <lastmod>2022-03-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/categories/IO%E6%B5%81/</loc>
-    <lastmod>2022-03-19</lastmod>
+    <lastmod>2022-03-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/categories/%E9%9D%A2%E8%AF%95/</loc>
-    <lastmod>2022-03-19</lastmod>
+    <lastmod>2022-03-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/categories/MySQL/</loc>
+    <lastmod>2022-03-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
