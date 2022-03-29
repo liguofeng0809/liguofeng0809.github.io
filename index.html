@@ -131,18 +131,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">12</span>
+          <span class="site-state-item-count">13</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-count">7</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-count">7</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -171,6 +171,168 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/03/29/Redis/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="feng">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="1024">
+      <meta itemprop="description" content="只有时时刻刻为将要到来的机会做准备，才不会错过那一次次的机会……">
+    </span>
+    
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 1024">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/03/29/Redis/" class="post-title-link" itemprop="url">Redis</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2022-03-29 00:00:00 / Modified: 20:35:04" itemprop="dateCreated datePublished" datetime="2022-03-29T00:00:00+08:00">2022-03-29</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Redis/" itemprop="url" rel="index"><span itemprop="name">Redis</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="Redis学习笔记"><a href="#Redis学习笔记" class="headerlink" title="Redis学习笔记"></a>Redis学习笔记</h1><h2 id="1-Redis的安装"><a href="#1-Redis的安装" class="headerlink" title="1.Redis的安装"></a>1.Redis的安装</h2><ul>
+<li>下载安装包</li>
+<li>将本地安装包上传到服务器（Linux）</li>
+<li>安装gcc的C语言编译环境 </li>
+<li>解压服务器端的Redis压缩包</li>
+<li>编译解压后的文件</li>
+<li>安装编译后的文件</li>
+</ul>
+<h4 id="1-首先在官网下载redis-的安装包（linux系统的安装包）"><a href="#1-首先在官网下载redis-的安装包（linux系统的安装包）" class="headerlink" title="1.首先在官网下载redis 的安装包（linux系统的安装包）"></a>1.首先在官网下载redis 的安装包（linux系统的安装包）</h4><p><a target="_blank" rel="noopener" href="https://redis.io/download/">Download | Redis</a></p>
+<h4 id="2-将Linux压缩包传到Linux系统中"><a href="#2-将Linux压缩包传到Linux系统中" class="headerlink" title="2.将Linux压缩包传到Linux系统中"></a>2.将Linux压缩包传到Linux系统中</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">上传命令：scp /redis/redis-6.2.6.tar.gz root@119.91.204.71:/redis/</span><br><span class="line">//  /redis/redis-6.2.6.tar.gz --本地安装包目录</span><br><span class="line">//  /redis/  --需要传到的Linux系统目录</span><br><span class="line">//  root@119.91.204.71:  --服务器用户名@服务器地址</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>出现错误：Permission denied, please try again.</p>
+<p>出现原因：上传的文件夹没有权限</p>
+<p>解决方法：chmod 776 /redis/       –开放文件夹的读写权限</p>
+<p>Linux实用命令：<a target="_blank" rel="noopener" href="https://geshanzsq.com/article/5">Linux常用实用命令-格姗知识圈 (geshanzsq.com)</a></p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">Linux 下的每个文件都有以下三种权限</span><br><span class="line"></span><br><span class="line">r：表示读取，对应的数字为 4；</span><br><span class="line"></span><br><span class="line">w：表示写入，对应的数字为 2；</span><br><span class="line"></span><br><span class="line">x：表示执行，对应的数字为 1</span><br><span class="line"></span><br><span class="line">通过 4、2、1 的组合，我们可以得到以下几种权限</span><br><span class="line"></span><br><span class="line">0：没有权限，用 - 表示</span><br><span class="line">4：读取权限，用 w 表示</span><br><span class="line">5：读取和执行权限，用 rx 表示</span><br><span class="line">6：读取和写入权限，用 rw 表示</span><br><span class="line">7：读取、写入和执行权限，用 rwx 表示</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-安装gcc的C语言编译环境"><a href="#3-安装gcc的C语言编译环境" class="headerlink" title="3.安装gcc的C语言编译环境"></a>3.安装gcc的C语言编译环境</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//安装gcc</span><br><span class="line">install gcc</span><br><span class="line">//查看版本号</span><br><span class="line">gcc --version</span><br></pre></td></tr></table></figure>
+
+<h4 id="4-解压压缩包"><a href="#4-解压压缩包" class="headerlink" title="4.解压压缩包"></a>4.解压压缩包</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf redis-6.2.6.tar.gz</span><br></pre></td></tr></table></figure>
+
+<h4 id="5-编译解压后的文件"><a href="#5-编译解压后的文件" class="headerlink" title="5.编译解压后的文件"></a>5.编译解压后的文件</h4><p>==这一步只是编译了文件，并没有进行安装==</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//进入解压后的文件目录redis-6.2.6</span><br><span class="line">cd redis-6.2.6</span><br><span class="line">//编译</span><br><span class="line">make</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>可能报错:</li>
+</ul>
+<p><img src="Redis/image-20220327224906995.png" alt="image-20220327224906995"></p>
+<ul>
+<li>解决方法：make distclean 后重新编译</li>
+</ul>
+<h4 id="6-安装编译后的redis文件"><a href="#6-安装编译后的redis文件" class="headerlink" title="6.安装编译后的redis文件"></a>6.安装编译后的redis文件</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//安装redis</span><br><span class="line">make install</span><br><span class="line">//查看安装的文件（一般会安装在 /usr/local/bin）</span><br><span class="line">cd /usr/local/bin</span><br><span class="line">//查看</span><br><span class="line">ls||ll</span><br></pre></td></tr></table></figure>
+
+<p><img src="Redis/image-20220327222036060.png" alt="image-20220327222036060"></p>
+<h4 id="7-启动redis"><a href="#7-启动redis" class="headerlink" title="7.启动redis"></a>7.启动redis</h4><ul>
+<li><p>前台启动（不推荐）</p>
+<p>==需要在bin目录下执行==</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">redis-server</span><br></pre></td></tr></table></figure></li>
+<li><p>后台启动（推荐）</p>
+</li>
+</ul>
+<p>1.复制 redis-6.2.6目录下的redis.conf文件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//复制 redis.conf文件到copy_redis目录下取名redis.conf</span><br><span class="line">cp redis.conf /copy_redis/redis.conf</span><br></pre></td></tr></table></figure>
+
+<p>2.使用vi编辑器修改指令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//进入copy——redis的文件夹</span><br><span class="line">cd /copy_redis</span><br><span class="line">//使用vi编辑器进入redis.conf</span><br><span class="line">vi redis.conf</span><br><span class="line">--&gt; 命令模式下使用 /daemonize寻找关键字</span><br><span class="line">--&gt; 按a进入insert模式</span><br><span class="line">--&gt; 将daemonize no ---&gt;  daemonize yes</span><br><span class="line">--&gt; 按ESC退出编辑模式</span><br><span class="line">--&gt; 输入 :wq 保存并退出</span><br></pre></td></tr></table></figure>
+
+<p>3.启动后台redis 与关闭</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">//进入/usr/local/bin目录</span><br><span class="line">cd /usr/local/bin</span><br><span class="line">//启动redis</span><br><span class="line">redis-server /copy_redis/redis.conf</span><br><span class="line">//查看redis进程</span><br><span class="line">ps -ef | grep redis</span><br><span class="line">//访问redis</span><br><span class="line">redis-cli</span><br><span class="line">//关闭redis</span><br><span class="line">redis-cli shutdown  ||  kill -9 进程号（如图）  ||  redis-cli -p63</span><br></pre></td></tr></table></figure>
+
+<p><img src="Redis/image-20220327232148448.png" alt="image-20220327232148448"></p>
+<h2 id="2-redis-conf配置文件的修改"><a href="#2-redis-conf配置文件的修改" class="headerlink" title="2.redis.conf配置文件的修改"></a>2.redis.conf配置文件的修改</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// 修改/copy_redis中的redis.conf</span><br><span class="line">cd /copy_redis</span><br><span class="line">// 使用vi编辑器进入redis.conf</span><br><span class="line">vi redis.conf</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>==注销 bind 127.0.0.1 -::1==</li>
+<li>不改只能本地访问</li>
+</ul>
+<p><img src="Redis/image-20220328161906528.png" alt="image-20220328161906528"></p>
+<ul>
+<li>==将protected-mode yes —&gt;   protected-mode no==</li>
+<li>改成<code>no</code>支持远程访问</li>
+</ul>
+<p><img src="Redis/image-20220328162404991.png" alt="image-20220328162404991"></p>
+<ul>
+<li>修改密码</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//找到如下内容</span><br><span class="line">#requirepass foobared</span><br><span class="line">//去掉注释或另起一行；设置密码</span><br><span class="line">requirepass 123456qq</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>验证密码</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">1. 启动：</span><br><span class="line">	./redis-server redis.conf</span><br><span class="line">	</span><br><span class="line">2. 进入客户端：</span><br><span class="line">	./redis-cli</span><br><span class="line">	</span><br><span class="line">3. 输入config get requirepass验证</span><br><span class="line"></span><br><span class="line">4. 出现“(error) NOAUTH Authentication required.证明设置密码成功！</span><br><span class="line"></span><br><span class="line">5. 输入密码：</span><br><span class="line">	auth 123456qq   得到ok</span><br><span class="line"></span><br><span class="line">6. 再次输入config get requirepass验证，即可看到自己设置的密码，123456就是密码</span><br><span class="line">	 1) &quot;requirepass&quot;</span><br><span class="line">	 2) &quot;123456qq&quot;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><img src="Redis/image-20220328165717922.png" alt="image-20220328165717922"></p>
+<h2 id="3-Jedis操作Redis"><a href="#3-Jedis操作Redis" class="headerlink" title="3.Jedis操作Redis"></a>3.Jedis操作Redis</h2><ol>
+<li><p>注释redis.conf中的<code>bind 127.0.0.1</code>   //不注释只能本地访问</p>
+</li>
+<li><p>将<code>protected-mode yes</code> —&gt;   <code>protected-mode no</code>   //开启远程的访问</p>
+</li>
+<li><p>关闭防火墙或者开启安全组的端口端口权限</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">1、开启防火墙 </span><br><span class="line">systemctl start firewalld</span><br><span class="line">2、查看防火墙状态</span><br><span class="line">systemctl status firewalld</span><br><span class="line">3、关闭防火墙 </span><br><span class="line">systemctl stop firewalld</span><br><span class="line">4、开放指定端口</span><br><span class="line">firewall-cmd --zone=public --add-port=1935/tcp --permanent</span><br><span class="line">命令含义：</span><br><span class="line">--zone #作用域</span><br><span class="line">--add-port=1935/tcp  #添加端口，格式为：端口/通讯协议</span><br><span class="line">--permanent  #永久生效，没有此参数重启后失效</span><br><span class="line">5、查看端口号</span><br><span class="line">netstat -ntlp   //查看当前所有tcp端口·</span><br><span class="line"></span><br><span class="line">netstat -ntulp |grep 1935   //查看所有1935端口使用情况·</span><br></pre></td></tr></table></figure></li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -2358,113 +2520,6 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Iterator&lt;String&gt; iterator = list.iterator();</span><br><span class="line"><span class="keyword">while</span>(iterator.hasNext()) &#123;</span><br><span class="line">	System.out.println(iterator.next());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="总体代码为："><a href="#总体代码为：" class="headerlink" title="总体代码为："></a>总体代码为：</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="keyword">import</span> java.util.Iterator;</span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"></span><br><span class="line"><span class="comment">//import java.util.LinkedList;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test1</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		</span><br><span class="line"><span class="comment">//		LinkedList&lt;String&gt; names = new LinkedList&lt;String&gt;();</span></span><br><span class="line"><span class="comment">//		names.add(&quot;Tom&quot;);</span></span><br><span class="line"><span class="comment">//		names.add(&quot;Tim&quot;);</span></span><br><span class="line"><span class="comment">//		names.add(&quot;Tommy&quot;);</span></span><br><span class="line"><span class="comment">//		names.add(&quot;aTom&quot;);</span></span><br><span class="line">		</span><br><span class="line">		ArrayList&lt;String&gt; names = <span class="keyword">new</span> ArrayList&lt;String&gt;();</span><br><span class="line">		names.add(<span class="string">&quot;Tom&quot;</span>);</span><br><span class="line">		names.add(<span class="string">&quot;Tim&quot;</span>);</span><br><span class="line">		names.add(<span class="string">&quot;Tommy&quot;</span>);</span><br><span class="line">		names.add(<span class="string">&quot;aTom&quot;</span>);</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">int</span> size = names.size();</span><br><span class="line">		System.out.println(size);</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">boolean</span> flag = names.isEmpty();</span><br><span class="line">		System.out.println(flag);</span><br><span class="line">		<span class="comment">//names.clear();//清空names的数据</span></span><br><span class="line">		flag = names.isEmpty();</span><br><span class="line">		System.out.println(flag);</span><br><span class="line">		</span><br><span class="line">		String name1 = names.get(<span class="number">0</span>);</span><br><span class="line">		System.out.println(name1);</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">for</span>(String name : names) &#123;</span><br><span class="line">			System.out.println(name);</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		System.out.println(<span class="string">&quot;##################&quot;</span>);</span><br><span class="line">		List&lt;String&gt; list = <span class="keyword">new</span> ArrayList&lt;String&gt;();</span><br><span class="line">		list.add(<span class="string">&quot;Tom&quot;</span>);</span><br><span class="line">		list.add(<span class="string">&quot;Jack&quot;</span>);</span><br><span class="line">		</span><br><span class="line">		list.add(<span class="number">0</span>, <span class="string">&quot;Bob&quot;</span>);</span><br><span class="line">		</span><br><span class="line">		list.set(<span class="number">0</span>, <span class="string">&quot;JIM&quot;</span>);</span><br><span class="line">		</span><br><span class="line">		Iterator&lt;String&gt; iterator = list.iterator();</span><br><span class="line">		<span class="keyword">while</span>(iterator.hasNext()) &#123;</span><br><span class="line">			System.out.println(iterator.next());</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/10/09/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%92%8C%E9%9D%A2%E5%90%91%E8%BF%87%E7%A8%8B%E7%9A%84%E5%8C%BA%E5%88%AB/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="feng">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="1024">
-      <meta itemprop="description" content="只有时时刻刻为将要到来的机会做准备，才不会错过那一次次的机会……">
-    </span>
-    
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 1024">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/10/09/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%92%8C%E9%9D%A2%E5%90%91%E8%BF%87%E7%A8%8B%E7%9A%84%E5%8C%BA%E5%88%AB/" class="post-title-link" itemprop="url">面向对象和面向过程的区别</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-10-09 00:00:00" itemprop="dateCreated datePublished" datetime="2021-10-09T00:00:00+08:00">2021-10-09</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2021-10-10 01:22:25" itemprop="dateModified" datetime="2021-10-10T01:22:25+08:00">2021-10-10</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Java%E5%9F%BA%E7%A1%80/" itemprop="url" rel="index"><span itemprop="name">Java基础</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="一-面向过程与面向对象对比"><a href="#一-面向过程与面向对象对比" class="headerlink" title="一.面向过程与面向对象对比"></a>一.面向过程与面向对象对比</h1><p>​         面向过程：强调的是每一个功能的步骤，有很多很多方法组成，这些方法相互调用，完成需求。<br>​         面向对象：强调的是对象，然后由对象去调用功能。</p>
-<p>​         面向过程：如果做小的项目，则效率非常高，很快就能实现，但是后期维护非常麻烦。<br>　 　面向对象：如果做大的项目，则效率相对会低，但是代码结构性很好，后期维护容易。从这个方面来说，效率反而提高了。</p>
-<h1 id="二-以面向对象为主，对比面向过程说明面向对象的思想特点"><a href="#二-以面向对象为主，对比面向过程说明面向对象的思想特点" class="headerlink" title="二.以面向对象为主，对比面向过程说明面向对象的思想特点"></a>二.以面向对象为主，对比面向过程说明面向对象的思想特点</h1><p>示例：把大象装进冰箱<br>       面向过程：<br>                     分三步：</p>
-<p>​                        1.打开冰箱门</p>
-<p>​                        2.装进大象</p>
-<p>​                        3.关闭冰箱门</p>
-<p>代码示例：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Demo</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">/*</span></span><br><span class="line"><span class="comment">        System.out.println(&quot;打开冰箱门&quot;);</span></span><br><span class="line"><span class="comment">        //打开冰箱门的动作，现在仅仅是为了演示，就写了一个输出语句，其实，它可能需要做很多操作。这个时候代码就比较多一些了。</span></span><br><span class="line"><span class="comment">        //假设我要多次打开冰箱门，代码一多，每次都写一遍，麻烦不？</span></span><br><span class="line"><span class="comment">        //我们就应该用方法改进。</span></span><br><span class="line"><span class="comment">        System.out.println(&quot;装进大象&quot;);</span></span><br><span class="line"><span class="comment">        System.out.println(&quot;关闭冰箱门&quot;);</span></span><br><span class="line"><span class="comment">        */</span>        </span><br><span class="line">        <span class="comment">//写了方法以后，调用就改变了。</span></span><br><span class="line">        open();</span><br><span class="line">        in();</span><br><span class="line">        close();</span><br><span class="line">    </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">open</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;打开冰箱门&quot;</span>);</span><br><span class="line">&#125;    </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">in</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;装进大象&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">close</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;关闭冰箱门&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>   面向对象：</p>
-<p>​              我们怎么才能更符合面向对象思想呢？</p>
-<p>　　　　　   1:有哪些类呢？<br>　　　　　　2:每个类有哪些东西呢？<br>　　　　　　3:类与类之间的关系是什么呢？</p>
-<p>　　　　把大象装进冰箱的分析？(如何分析有哪些类呢？答：名词提取法)<br>　　　　　　A:有哪些类呢？<br>　　　　　　　　大象类<br>　　　　　　　　冰箱类<br>　　　　　　　　Demo类<br>　　　　　　B:每个类有哪些东西呢？<br>　　　　　　　　大象类：<br>　　　　　　　　　　进去<br>　　　　　　　　冰箱类：<br>　　　　　　　　　　开门<br>　　　　　　　　　　关门<br>　　　　　　　　Demo类:<br>　　　　　　　　　　main方法<br>　　　　　　C:类与类之间的关系是什么呢？<br>　　　　　　　　Demo类中使用大象类和冰箱类的功能。</p>
-<p>代码示例：</p>
-<p>大象类（进去）：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> 大象 </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">in</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;装进大象&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>  冰箱类（开关门）：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">class 冰箱 &#123;</span><br><span class="line">    public static void open() &#123;</span><br><span class="line">        System.out.println(&quot;打开冰箱门&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">                </span><br><span class="line"></span><br><span class="line">public static void close() &#123;</span><br><span class="line">    System.out.println(&quot;关闭冰箱门&quot;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>Demo类（main()调用大象类和冰箱类）：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Demo</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">             冰箱.open();<span class="comment">//冰箱类调用开门方法</span></span><br><span class="line"></span><br><span class="line">             大象.in();大象类调用进去方法</span><br><span class="line">             冰箱.close();冰箱类调用关门方法 </span><br><span class="line">            &#125; </span><br><span class="line">          &#125;</span><br></pre></td></tr></table></figure>
 
 
       
