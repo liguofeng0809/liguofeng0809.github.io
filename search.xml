@@ -1,44 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>JavaWeb基础知识</title>
-    <url>/2021/10/24/JavaWeb%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</url>
-    <content><![CDATA[<h2 id="Junit"><a href="#Junit" class="headerlink" title="Junit"></a>Junit</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">* 测试分类：</span><br><span class="line">	1. 黑盒测试：不需要写代码，给输入值，看程序是否能够输出期望的值。</span><br><span class="line">	2. 白盒测试：需要写代码的。关注程序具体的执行流程。</span><br><span class="line"></span><br><span class="line">* Junit使用：白盒测试</span><br><span class="line">	* 步骤：</span><br><span class="line">		1. 定义一个测试类(测试用例)</span><br><span class="line">			* 建议：</span><br><span class="line">				* 测试类名：被测试的类名Test		CalculatorTest</span><br><span class="line">				* 包名：xxx.xxx.xx.test		cn.itcast.test</span><br><span class="line"></span><br><span class="line">		2. 定义测试方法：可以独立运行</span><br><span class="line">			* 建议：</span><br><span class="line">				* 方法名：test测试的方法名		testAdd()  </span><br><span class="line">				* 返回值：void</span><br><span class="line">				* 参数列表：空参</span><br><span class="line"></span><br><span class="line">		3. 给方法加@Test</span><br><span class="line">		4. 导入junit依赖环境</span><br><span class="line"></span><br><span class="line">	* 判定结果：</span><br><span class="line">		* 红色：失败</span><br><span class="line">		* 绿色：成功</span><br><span class="line">		* 一般我们会使用断言操作来处理结果</span><br><span class="line">			* Assert.assertEquals(期望的结果,运算的结果);</span><br><span class="line"></span><br><span class="line">	* 补充：</span><br><span class="line">		* @Before:</span><br><span class="line">			* 修饰的方法会在测试方法之前被自动执行</span><br><span class="line">		* @After:</span><br><span class="line">			* 修饰的方法会在测试方法执行之后自动被执行</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>JavaWeb基础</category>
-      </categories>
-      <tags>
-        <tag>JavaWeb基础</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java基础问题合集</title>
-    <url>/2021/10/17/Java%E5%9F%BA%E7%A1%80%E9%97%AE%E9%A2%98%E5%90%88%E9%9B%86/</url>
-    <content><![CDATA[<h4 id="问题合集："><a href="#问题合集：" class="headerlink" title="问题合集："></a>问题合集：</h4><h5 id="什么是泛型？"><a href="#什么是泛型？" class="headerlink" title="什么是泛型？"></a>什么是泛型？</h5><p>  答：泛型：即“参数化类型”。一提到参数，最熟悉的就是定义方法时有形参，然后调用此方法时传递实参。那么参数化类型怎么理解呢？顾名思义，就是将类型由原来的具体的类型参数化，类似于方法中的变量参数，此时类型也定义成参数形式（可以称之为类型形参），然后在使用/调用时传入具体的类型（类型实参）。<br>泛型的本质：是为了参数化类型（在不创建新的类型的情况下，通过泛型指定的不同类型来控制形参具体限制的类型）。也就是说在泛型使用过程中，操作的数据类型被指定为一个参数，这种参数类型可以用在类、接口和方法中，分别被称为泛型类、泛型接口、泛型方法。</p>
-<h5 id="Collection-Set-List"><a href="#Collection-Set-List" class="headerlink" title="Collection(Set   List)"></a>Collection(Set   List)</h5><p>Set的接口继承Collection接口，而且不允许集合中存在重复项。</p>
-<p>List接口继承了Collection接口以定义一个允许重复项的有序集合。</p>
-<p>Set：搜索元素效率低下，删除和插入的效率高，插入和删除不会引起元素的位置变化。</p>
-<p>List：和数组类似，List可以动态增长，查找元素的效率较高，插入元素和删除元素效率低，因为会引起其他元素位置发生变化。</p>
-<p>Set 和 List的具体子类：</p>
-<p>Set</p>
-<pre><code> ----HashSet：以哈希表的形式存放元素，插入删除速度很快
-</code></pre>
-<p>List：</p>
-<pre><code> ----ArrayList :动态数组
-
- ----LinkedList:链表，队列，堆栈
-</code></pre>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>Java基础</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>JavaSE知识体系</title>
     <url>/2021/12/11/JavaSE%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB/</url>
     <content><![CDATA[<h1 id="JavaSE知识梳理"><a href="#JavaSE知识梳理" class="headerlink" title="JavaSE知识梳理"></a>JavaSE知识梳理</h1><h3 id="2-数据类型"><a href="#2-数据类型" class="headerlink" title="2. 数据类型"></a>2. 数据类型</h3><h4 id="2-1-基本类型"><a href="#2-1-基本类型" class="headerlink" title="2.1 基本类型"></a>2.1 基本类型</h4><table>
@@ -161,6 +123,44 @@
       </tags>
   </entry>
   <entry>
+    <title>JavaWeb基础知识</title>
+    <url>/2021/10/24/JavaWeb%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</url>
+    <content><![CDATA[<h2 id="Junit"><a href="#Junit" class="headerlink" title="Junit"></a>Junit</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">* 测试分类：</span><br><span class="line">	1. 黑盒测试：不需要写代码，给输入值，看程序是否能够输出期望的值。</span><br><span class="line">	2. 白盒测试：需要写代码的。关注程序具体的执行流程。</span><br><span class="line"></span><br><span class="line">* Junit使用：白盒测试</span><br><span class="line">	* 步骤：</span><br><span class="line">		1. 定义一个测试类(测试用例)</span><br><span class="line">			* 建议：</span><br><span class="line">				* 测试类名：被测试的类名Test		CalculatorTest</span><br><span class="line">				* 包名：xxx.xxx.xx.test		cn.itcast.test</span><br><span class="line"></span><br><span class="line">		2. 定义测试方法：可以独立运行</span><br><span class="line">			* 建议：</span><br><span class="line">				* 方法名：test测试的方法名		testAdd()  </span><br><span class="line">				* 返回值：void</span><br><span class="line">				* 参数列表：空参</span><br><span class="line"></span><br><span class="line">		3. 给方法加@Test</span><br><span class="line">		4. 导入junit依赖环境</span><br><span class="line"></span><br><span class="line">	* 判定结果：</span><br><span class="line">		* 红色：失败</span><br><span class="line">		* 绿色：成功</span><br><span class="line">		* 一般我们会使用断言操作来处理结果</span><br><span class="line">			* Assert.assertEquals(期望的结果,运算的结果);</span><br><span class="line"></span><br><span class="line">	* 补充：</span><br><span class="line">		* @Before:</span><br><span class="line">			* 修饰的方法会在测试方法之前被自动执行</span><br><span class="line">		* @After:</span><br><span class="line">			* 修饰的方法会在测试方法执行之后自动被执行</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>JavaWeb基础</category>
+      </categories>
+      <tags>
+        <tag>JavaWeb基础</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java基础问题合集</title>
+    <url>/2021/10/17/Java%E5%9F%BA%E7%A1%80%E9%97%AE%E9%A2%98%E5%90%88%E9%9B%86/</url>
+    <content><![CDATA[<h4 id="问题合集："><a href="#问题合集：" class="headerlink" title="问题合集："></a>问题合集：</h4><h5 id="什么是泛型？"><a href="#什么是泛型？" class="headerlink" title="什么是泛型？"></a>什么是泛型？</h5><p>  答：泛型：即“参数化类型”。一提到参数，最熟悉的就是定义方法时有形参，然后调用此方法时传递实参。那么参数化类型怎么理解呢？顾名思义，就是将类型由原来的具体的类型参数化，类似于方法中的变量参数，此时类型也定义成参数形式（可以称之为类型形参），然后在使用/调用时传入具体的类型（类型实参）。<br>泛型的本质：是为了参数化类型（在不创建新的类型的情况下，通过泛型指定的不同类型来控制形参具体限制的类型）。也就是说在泛型使用过程中，操作的数据类型被指定为一个参数，这种参数类型可以用在类、接口和方法中，分别被称为泛型类、泛型接口、泛型方法。</p>
+<h5 id="Collection-Set-List"><a href="#Collection-Set-List" class="headerlink" title="Collection(Set   List)"></a>Collection(Set   List)</h5><p>Set的接口继承Collection接口，而且不允许集合中存在重复项。</p>
+<p>List接口继承了Collection接口以定义一个允许重复项的有序集合。</p>
+<p>Set：搜索元素效率低下，删除和插入的效率高，插入和删除不会引起元素的位置变化。</p>
+<p>List：和数组类似，List可以动态增长，查找元素的效率较高，插入元素和删除元素效率低，因为会引起其他元素位置发生变化。</p>
+<p>Set 和 List的具体子类：</p>
+<p>Set</p>
+<pre><code> ----HashSet：以哈希表的形式存放元素，插入删除速度很快
+</code></pre>
+<p>List：</p>
+<pre><code> ----ArrayList :动态数组
+
+ ----LinkedList:链表，队列，堆栈
+</code></pre>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>Java基础</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Java集合详解</title>
     <url>/2021/10/11/Java%E9%9B%86%E5%90%88%E8%AF%A6%E8%A7%A3/</url>
     <content><![CDATA[<h4 id="表-1-Java集合接口的作用"><a href="#表-1-Java集合接口的作用" class="headerlink" title="表 1 Java集合接口的作用"></a>表 1 Java集合接口的作用</h4><table>
@@ -236,50 +236,6 @@
 <td align="left">可以对键对象进行排序</td>
 </tr>
 </tbody></table>
-]]></content>
-      <categories>
-        <category>集合</category>
-      </categories>
-      <tags>
-        <tag>Java基础</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>List集合中方法总结</title>
-    <url>/2021/10/10/List%E9%9B%86%E5%90%88%E4%B8%AD%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<h1 id="List集合常用方法"><a href="#List集合常用方法" class="headerlink" title="List集合常用方法"></a>List集合常用方法</h1><p>由于List集合中的ArrayList与LinkedList都是List接口的实现类，所以他们中定义的方法基本上是一样的，因此只以其中一种举例。</p>
-<h3 id="调用Link集合方法的代码格式："><a href="#调用Link集合方法的代码格式：" class="headerlink" title="调用Link集合方法的代码格式："></a>调用Link集合方法的代码格式：</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.ArrayList;<span class="comment">//引用ArrayList包</span></span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"><span class="comment">//import java.util.LinkedList;//引用LinkedList包</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test1</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="comment">//		LinkedList&lt;String&gt; names = new LinkedList&lt;String&gt;();</span></span><br><span class="line">		ArrayList&lt;String&gt; names = <span class="keyword">new</span> ArrayList&lt;String&gt;();</span><br><span class="line"></span><br><span class="line">&lt;String&gt;称之为泛型，用于限制集合中所能保存的数据类型，可等效为数组元素：String [] names = <span class="keyword">new</span> String; </span><br></pre></td></tr></table></figure>
-
-<h3 id="add-方法："><a href="#add-方法：" class="headerlink" title=".add()方法："></a>.add()方法：</h3><p>作用：向集合中添加数据；<br>格式：对象名.add（添加内容）；（添加内容必须与对象的类型一致）<br>代码：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">names.add(<span class="string">&quot;Tom&quot;</span>);</span><br><span class="line">names.add(<span class="string">&quot;Tim&quot;</span>);</span><br><span class="line">names.add(<span class="string">&quot;Tommy&quot;</span>);</span><br><span class="line">names.add(<span class="string">&quot;aTom&quot;</span>);</span><br></pre></td></tr></table></figure>
-
-<h3 id="size-方法："><a href="#size-方法：" class="headerlink" title=".size()方法："></a>.size()方法：</h3><p>作用：统计集合中有多少元素（元素可以重复储存）<br>格式：对象名.size()；<br>代码：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> size = names.size();</span><br><span class="line">System.out.println(size);</span><br></pre></td></tr></table></figure>
-
-<h3 id="isEmpty-方法："><a href="#isEmpty-方法：" class="headerlink" title=".isEmpty()方法："></a>.isEmpty()方法：</h3><p>作用：判断集合中是否有元素，若有则返回true；若没有，则返回false<br>格式：对象名.isEmpty();<br>代码：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">boolean</span> flag = names.isEmpty();<span class="comment">// flag = false</span></span><br><span class="line">System.out.println(flag);</span><br></pre></td></tr></table></figure>
-
-<h3 id="clear-方法："><a href="#clear-方法：" class="headerlink" title=".clear()方法："></a>.clear()方法：</h3><p>作用：清空集合中的所有元素<br>格式：对象名.clear()；<br>代码：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">names.clear();<span class="comment">//清空names的数据</span></span><br><span class="line">flag = names.isEmpty();<span class="comment">//flag = true;</span></span><br><span class="line">System.out.println(flag);</span><br></pre></td></tr></table></figure>
-
-<h3 id="get-index-方法："><a href="#get-index-方法：" class="headerlink" title=".get(index)方法："></a>.get(index)方法：</h3><p>作用：获取对应位置index的数据，用法与数组相似，从零开始计数。<br>格式：变量名 = 对象名.get（目标值位置）；<br>代码：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">String name1 = names.get(<span class="number">0</span>);</span><br><span class="line">System.out.println(name1);</span><br></pre></td></tr></table></figure>
-
-<h3 id="add-index-element-方法"><a href="#add-index-element-方法" class="headerlink" title=".add(index, element)方法"></a>.add(index, element)方法</h3><p>作用：在指定位置index添加数据element，并且从index开始的所有元素以此后移，<br>格式：对象名.add(index, element)<br>代码：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">list.add(<span class="string">&quot;Tom&quot;</span>);</span><br><span class="line">list.add(<span class="number">0</span>，<span class="string">&quot;Jack&quot;</span>);</span><br></pre></td></tr></table></figure>
-
-<h3 id="set-index-element-方法"><a href="#set-index-element-方法" class="headerlink" title=".set(index, element)方法"></a>.set(index, element)方法</h3><p>作用：在指定位置index的数据替换为element<br>格式：.set(index, element)；<br>代码：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">list.set(<span class="number">0</span>, <span class="string">&quot;JIM&quot;</span>);</span><br></pre></td></tr></table></figure>
-
-<h1 id="遍历集合中的元素："><a href="#遍历集合中的元素：" class="headerlink" title="遍历集合中的元素："></a>遍历集合中的元素：</h1><h3 id="方法一：利用-get-index-方法实现传统数组输出方法："><a href="#方法一：利用-get-index-方法实现传统数组输出方法：" class="headerlink" title="方法一：利用 .get(index) 方法实现传统数组输出方法："></a>方法一：利用 .get(index) 方法实现传统数组输出方法：</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span> ;i &lt; names.size() ;++i)&#123;</span><br><span class="line">	System.out.println(names.get(i));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="方法二：使用简便方法遍历："><a href="#方法二：使用简便方法遍历：" class="headerlink" title="方法二：使用简便方法遍历："></a>方法二：使用简便方法遍历：</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(String name : names) &#123;</span><br><span class="line">	System.out.println(name);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="方法三：借用Iterator包中的方法"><a href="#方法三：借用Iterator包中的方法" class="headerlink" title="方法三：借用Iterator包中的方法"></a>方法三：借用Iterator包中的方法</h3><p>.hasNext()方法：<br>作用：判断下一位是否有元素，即是否还有元素未被遍历出。<br>格式：对象名.hasNext()；<br>.next()方法：<br>作用：调用除集合中的元素。<br>格式：（变量=）对象名.next()；</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Iterator&lt;String&gt; iterator = list.iterator();</span><br><span class="line"><span class="keyword">while</span>(iterator.hasNext()) &#123;</span><br><span class="line">	System.out.println(iterator.next());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="总体代码为："><a href="#总体代码为：" class="headerlink" title="总体代码为："></a>总体代码为：</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="keyword">import</span> java.util.Iterator;</span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"></span><br><span class="line"><span class="comment">//import java.util.LinkedList;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test1</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		</span><br><span class="line"><span class="comment">//		LinkedList&lt;String&gt; names = new LinkedList&lt;String&gt;();</span></span><br><span class="line"><span class="comment">//		names.add(&quot;Tom&quot;);</span></span><br><span class="line"><span class="comment">//		names.add(&quot;Tim&quot;);</span></span><br><span class="line"><span class="comment">//		names.add(&quot;Tommy&quot;);</span></span><br><span class="line"><span class="comment">//		names.add(&quot;aTom&quot;);</span></span><br><span class="line">		</span><br><span class="line">		ArrayList&lt;String&gt; names = <span class="keyword">new</span> ArrayList&lt;String&gt;();</span><br><span class="line">		names.add(<span class="string">&quot;Tom&quot;</span>);</span><br><span class="line">		names.add(<span class="string">&quot;Tim&quot;</span>);</span><br><span class="line">		names.add(<span class="string">&quot;Tommy&quot;</span>);</span><br><span class="line">		names.add(<span class="string">&quot;aTom&quot;</span>);</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">int</span> size = names.size();</span><br><span class="line">		System.out.println(size);</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">boolean</span> flag = names.isEmpty();</span><br><span class="line">		System.out.println(flag);</span><br><span class="line">		<span class="comment">//names.clear();//清空names的数据</span></span><br><span class="line">		flag = names.isEmpty();</span><br><span class="line">		System.out.println(flag);</span><br><span class="line">		</span><br><span class="line">		String name1 = names.get(<span class="number">0</span>);</span><br><span class="line">		System.out.println(name1);</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">for</span>(String name : names) &#123;</span><br><span class="line">			System.out.println(name);</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		System.out.println(<span class="string">&quot;##################&quot;</span>);</span><br><span class="line">		List&lt;String&gt; list = <span class="keyword">new</span> ArrayList&lt;String&gt;();</span><br><span class="line">		list.add(<span class="string">&quot;Tom&quot;</span>);</span><br><span class="line">		list.add(<span class="string">&quot;Jack&quot;</span>);</span><br><span class="line">		</span><br><span class="line">		list.add(<span class="number">0</span>, <span class="string">&quot;Bob&quot;</span>);</span><br><span class="line">		</span><br><span class="line">		list.set(<span class="number">0</span>, <span class="string">&quot;JIM&quot;</span>);</span><br><span class="line">		</span><br><span class="line">		Iterator&lt;String&gt; iterator = list.iterator();</span><br><span class="line">		<span class="keyword">while</span>(iterator.hasNext()) &#123;</span><br><span class="line">			System.out.println(iterator.next());</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 ]]></content>
       <categories>
         <category>集合</category>
@@ -439,42 +395,6 @@
       </categories>
       <tags>
         <tag>Java基础</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>学习日记（for循环增强）</title>
-    <url>/2021/10/07/%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0%EF%BC%88for%E5%BE%AA%E7%8E%AF%E5%A2%9E%E5%BC%BA%EF%BC%89/</url>
-    <content><![CDATA[<h1 id="增强for循环：简化迭代器书写"><a href="#增强for循环：简化迭代器书写" class="headerlink" title="增强for循环：简化迭代器书写"></a>增强for循环：简化迭代器书写</h1><h2 id="一、增强for循环的简单实例"><a href="#一、增强for循环的简单实例" class="headerlink" title="一、增强for循环的简单实例"></a>一、增强for循环的简单实例</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">	    <span class="keyword">int</span> arr[] = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line">	    <span class="comment">/**</span></span><br><span class="line"><span class="comment">	    *增强for</span></span><br><span class="line"><span class="comment">	    */</span></span><br><span class="line">	    <span class="keyword">for</span>(<span class="keyword">int</span> num : arr)&#123;</span><br><span class="line">	     System.out.println(num);</span><br><span class="line">	    &#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="二、增强for循环的几种应用场景"><a href="#二、增强for循环的几种应用场景" class="headerlink" title="二、增强for循环的几种应用场景"></a>二、增强for循环的几种应用场景</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> *增强for</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo</span></span>&#123;</span><br><span class="line"><span class="comment">//数组的简单应用</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test1</span><span class="params">()</span></span>&#123;</span><br><span class="line">		<span class="keyword">int</span> arr[] = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> num : arr)&#123;</span><br><span class="line">			System.out.println(num);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//链表的简单应用</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test2</span><span class="params">()</span></span>&#123;</span><br><span class="line">		List list = <span class="keyword">new</span> ArrayList();</span><br><span class="line">		list.add(<span class="number">1</span>);</span><br><span class="line">		list.add(<span class="number">2</span>);</span><br><span class="line">		list.add(<span class="number">3</span>);</span><br><span class="line">		<span class="keyword">for</span>(Object obj : list)&#123;</span><br><span class="line">			 <span class="keyword">int</span> i = (Integer)obj;</span><br><span class="line">			 System.out.println(i);</span><br><span class="line">		&#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//map的应用实例</span></span><br><span class="line">	<span class="comment">//传统方式1</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test3</span><span class="params">()</span></span>&#123;</span><br><span class="line">		Map map = <span class="keyword">new</span> LinkedHashMap();<span class="comment">//不同于HashMap的无顺序形式</span></span><br><span class="line">		map.put(<span class="string">&quot;1&quot;</span>,<span class="string">&quot;aaa&quot;</span>);</span><br><span class="line">		map.put(<span class="string">&quot;2&quot;</span>,<span class="string">&quot;bbb&quot;</span>);</span><br><span class="line">		map.put(<span class="string">&quot;3&quot;</span>,<span class="string">&quot;ccc&quot;</span>);</span><br><span class="line">		</span><br><span class="line">		Set set = map.keySet();</span><br><span class="line">		Iterator  it = set.iterator();</span><br><span class="line">		<span class="keyword">while</span>(it.hasNext())&#123;</span><br><span class="line">			String key = (String)it.next();</span><br><span class="line">			String value = (String)map.get(key);</span><br><span class="line">			System.out.println(key + <span class="string">&quot;=&quot;</span> + value);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//传统方式2</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test4</span><span class="params">()</span></span>&#123;</span><br><span class="line">	Map map = <span class="keyword">new</span> LinkedHashMap();</span><br><span class="line">	map.put(<span class="string">&quot;1&quot;</span>,<span class="string">&quot;aaa&quot;</span>);</span><br><span class="line">	map.put(<span class="string">&quot;2&quot;</span>,<span class="string">&quot;bbb&quot;</span>);</span><br><span class="line">	map.put(<span class="string">&quot;3&quot;</span>,<span class="string">&quot;ccc&quot;</span>);</span><br><span class="line">	</span><br><span class="line">	Set set = map.entrySet();</span><br><span class="line">	Iterator  it = set.iterator();</span><br><span class="line">	<span class="keyword">while</span>(it.hasNext())&#123;</span><br><span class="line">		Map.Entry entry = (Entry)it.next();</span><br><span class="line">		String key = (String)entry.getKey();</span><br><span class="line">		String value = (String)entry.getValue();</span><br><span class="line">		System.out.println(key + <span class="string">&quot;=&quot;</span> + value);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//增强for循环应用于map的第一种方法</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test5</span><span class="params">()</span></span>&#123;</span><br><span class="line">	Map map = <span class="keyword">new</span> LinkedHashMap();</span><br><span class="line">	map.put(<span class="string">&quot;1&quot;</span>,<span class="string">&quot;aaa&quot;</span>);</span><br><span class="line">	map.put(<span class="string">&quot;2&quot;</span>,<span class="string">&quot;bbb&quot;</span>);</span><br><span class="line">	map.put(<span class="string">&quot;3&quot;</span>,<span class="string">&quot;ccc&quot;</span>);</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">for</span>(Object obj : map.keySet())&#123;</span><br><span class="line">		String key = (String) obj;</span><br><span class="line">		Stringg value = (String) map.get(key);</span><br><span class="line">		System.out.println(key + <span class="string">&quot;=&quot;</span> + value);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">	<span class="comment">//增强for循环应用于map的第二种方法</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test5</span><span class="params">()</span></span>&#123;</span><br><span class="line">		Map map = <span class="keyword">new</span> LinkedHashMap();</span><br><span class="line">		map.put(<span class="string">&quot;1&quot;</span>,<span class="string">&quot;aaa&quot;</span>);</span><br><span class="line">		map.put(<span class="string">&quot;2&quot;</span>,<span class="string">&quot;bbb&quot;</span>);</span><br><span class="line">		map.put(<span class="string">&quot;3&quot;</span>,<span class="string">&quot;ccc&quot;</span>);</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">for</span>(Object obj : map.entrySet())&#123;</span><br><span class="line">			Map.Entry entry = (entry) obj;</span><br><span class="line">			String key = (String) entry.getKey();</span><br><span class="line">			Stringg value = (String) entry.getVnalue();</span><br><span class="line">			System.out.println(key + <span class="string">&quot;=&quot;</span> + value);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="三、增强for循环需要注意的问题"><a href="#三、增强for循环需要注意的问题" class="headerlink" title="三、增强for循环需要注意的问题"></a>三、增强for循环需要注意的问题</h2><p>1.只适合取数据，不能更改数据；</p>
-<p>2.只用于数组，或实现Iterable接口的集合类上；set，list。</p>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>Java基础</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>玫瑰少年</title>
-    <url>/2022/03/19/%E7%8E%AB%E7%91%B0%E5%B0%91%E5%B9%B4/</url>
-    <content><![CDATA[<h1 id="玫瑰少年"><a href="#玫瑰少年" class="headerlink" title="玫瑰少年"></a>玫瑰少年</h1><h4 id="五月天"><a href="#五月天" class="headerlink" title="- 五月天"></a>- 五月天</h4><p>谁把谁的灵魂 装进谁的身体<br>谁把谁的身体 变成囹圄囚禁自己<br>乱世总是最 不缺耳语<br>哪种美丽会 换来妒忌<br>你并没有罪 有罪是这世界<br>生而为人无罪 你不需要抱歉<br>ONE day I wIll be you baby boy and you Gon’be me<br>喧哗如果不停 让我陪你安静<br>I wIsh I could hug you tIll you’re really really being free<br>哪朵玫瑰没有荆棘<br>最好的 报复是 美丽<br>最美的 盛开是 反击<br>别让谁去 改变了你<br>你是你 或是妳 都行<br>会有人 全心的 爱你<br>试着想像 you swItched to hIs body<br>SeXualIty 当心什么会伤你<br>多少次的重伤 多少次的冷语<br>Drowning 谁会拉你<br>Dreaming 谁会陪你<br>Same s**t happens every day<br>你离开后 世界可改变<br>多少无知罪愆 事过不境迁<br>永志不忘纪念 往事不如烟<br>生而为人无罪 你不需要抱歉<br>ONE day I wIll be you baby boy and you Gon’be me<br>喧哗如果不停 让我陪你安静<br>I wIsh I could hug you tIll you’re really really being free<br>哪朵玫瑰没有荆棘<br>最好的 报复是 美丽<br>最美的 盛开是 反击<br>别让谁去 改变了你<br>你是你 或是妳 都行<br>会有人 全心的 爱你<br>玫瑰少年 在我心里<br>绽放着 鲜艳的 传奇<br>我们都 从来没 忘记<br>你的控诉 没有声音<br>却倾诉 更多的 真理<br>却唤醒 无数的 真心<br>哪朵玫瑰没有荆棘<br>最好的 报复是 美丽<br>最美的 盛开是 反击<br>别让谁去 改变了你<br>你是你 或是妳 都行<br>会有人 全心的 爱你<br>玫瑰少年 在我心里<br>玫瑰少年 在我心里</p>
-]]></content>
-      <tags>
-        <tag>五月天</tag>
       </tags>
   </entry>
   <entry>
@@ -1698,6 +1618,86 @@
       </categories>
       <tags>
         <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>List集合中方法总结</title>
+    <url>/2021/10/10/List%E9%9B%86%E5%90%88%E4%B8%AD%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<h1 id="List集合常用方法"><a href="#List集合常用方法" class="headerlink" title="List集合常用方法"></a>List集合常用方法</h1><p>由于List集合中的ArrayList与LinkedList都是List接口的实现类，所以他们中定义的方法基本上是一样的，因此只以其中一种举例。</p>
+<h3 id="调用Link集合方法的代码格式："><a href="#调用Link集合方法的代码格式：" class="headerlink" title="调用Link集合方法的代码格式："></a>调用Link集合方法的代码格式：</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.ArrayList;<span class="comment">//引用ArrayList包</span></span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"><span class="comment">//import java.util.LinkedList;//引用LinkedList包</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test1</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="comment">//		LinkedList&lt;String&gt; names = new LinkedList&lt;String&gt;();</span></span><br><span class="line">		ArrayList&lt;String&gt; names = <span class="keyword">new</span> ArrayList&lt;String&gt;();</span><br><span class="line"></span><br><span class="line">&lt;String&gt;称之为泛型，用于限制集合中所能保存的数据类型，可等效为数组元素：String [] names = <span class="keyword">new</span> String; </span><br></pre></td></tr></table></figure>
+
+<h3 id="add-方法："><a href="#add-方法：" class="headerlink" title=".add()方法："></a>.add()方法：</h3><p>作用：向集合中添加数据；<br>格式：对象名.add（添加内容）；（添加内容必须与对象的类型一致）<br>代码：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">names.add(<span class="string">&quot;Tom&quot;</span>);</span><br><span class="line">names.add(<span class="string">&quot;Tim&quot;</span>);</span><br><span class="line">names.add(<span class="string">&quot;Tommy&quot;</span>);</span><br><span class="line">names.add(<span class="string">&quot;aTom&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<h3 id="size-方法："><a href="#size-方法：" class="headerlink" title=".size()方法："></a>.size()方法：</h3><p>作用：统计集合中有多少元素（元素可以重复储存）<br>格式：对象名.size()；<br>代码：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> size = names.size();</span><br><span class="line">System.out.println(size);</span><br></pre></td></tr></table></figure>
+
+<h3 id="isEmpty-方法："><a href="#isEmpty-方法：" class="headerlink" title=".isEmpty()方法："></a>.isEmpty()方法：</h3><p>作用：判断集合中是否有元素，若有则返回true；若没有，则返回false<br>格式：对象名.isEmpty();<br>代码：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">boolean</span> flag = names.isEmpty();<span class="comment">// flag = false</span></span><br><span class="line">System.out.println(flag);</span><br></pre></td></tr></table></figure>
+
+<h3 id="clear-方法："><a href="#clear-方法：" class="headerlink" title=".clear()方法："></a>.clear()方法：</h3><p>作用：清空集合中的所有元素<br>格式：对象名.clear()；<br>代码：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">names.clear();<span class="comment">//清空names的数据</span></span><br><span class="line">flag = names.isEmpty();<span class="comment">//flag = true;</span></span><br><span class="line">System.out.println(flag);</span><br></pre></td></tr></table></figure>
+
+<h3 id="get-index-方法："><a href="#get-index-方法：" class="headerlink" title=".get(index)方法："></a>.get(index)方法：</h3><p>作用：获取对应位置index的数据，用法与数组相似，从零开始计数。<br>格式：变量名 = 对象名.get（目标值位置）；<br>代码：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">String name1 = names.get(<span class="number">0</span>);</span><br><span class="line">System.out.println(name1);</span><br></pre></td></tr></table></figure>
+
+<h3 id="add-index-element-方法"><a href="#add-index-element-方法" class="headerlink" title=".add(index, element)方法"></a>.add(index, element)方法</h3><p>作用：在指定位置index添加数据element，并且从index开始的所有元素以此后移，<br>格式：对象名.add(index, element)<br>代码：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">list.add(<span class="string">&quot;Tom&quot;</span>);</span><br><span class="line">list.add(<span class="number">0</span>，<span class="string">&quot;Jack&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<h3 id="set-index-element-方法"><a href="#set-index-element-方法" class="headerlink" title=".set(index, element)方法"></a>.set(index, element)方法</h3><p>作用：在指定位置index的数据替换为element<br>格式：.set(index, element)；<br>代码：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">list.set(<span class="number">0</span>, <span class="string">&quot;JIM&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<h1 id="遍历集合中的元素："><a href="#遍历集合中的元素：" class="headerlink" title="遍历集合中的元素："></a>遍历集合中的元素：</h1><h3 id="方法一：利用-get-index-方法实现传统数组输出方法："><a href="#方法一：利用-get-index-方法实现传统数组输出方法：" class="headerlink" title="方法一：利用 .get(index) 方法实现传统数组输出方法："></a>方法一：利用 .get(index) 方法实现传统数组输出方法：</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span> ;i &lt; names.size() ;++i)&#123;</span><br><span class="line">	System.out.println(names.get(i));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="方法二：使用简便方法遍历："><a href="#方法二：使用简便方法遍历：" class="headerlink" title="方法二：使用简便方法遍历："></a>方法二：使用简便方法遍历：</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(String name : names) &#123;</span><br><span class="line">	System.out.println(name);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="方法三：借用Iterator包中的方法"><a href="#方法三：借用Iterator包中的方法" class="headerlink" title="方法三：借用Iterator包中的方法"></a>方法三：借用Iterator包中的方法</h3><p>.hasNext()方法：<br>作用：判断下一位是否有元素，即是否还有元素未被遍历出。<br>格式：对象名.hasNext()；<br>.next()方法：<br>作用：调用除集合中的元素。<br>格式：（变量=）对象名.next()；</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Iterator&lt;String&gt; iterator = list.iterator();</span><br><span class="line"><span class="keyword">while</span>(iterator.hasNext()) &#123;</span><br><span class="line">	System.out.println(iterator.next());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="总体代码为："><a href="#总体代码为：" class="headerlink" title="总体代码为："></a>总体代码为：</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="keyword">import</span> java.util.Iterator;</span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"></span><br><span class="line"><span class="comment">//import java.util.LinkedList;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test1</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		</span><br><span class="line"><span class="comment">//		LinkedList&lt;String&gt; names = new LinkedList&lt;String&gt;();</span></span><br><span class="line"><span class="comment">//		names.add(&quot;Tom&quot;);</span></span><br><span class="line"><span class="comment">//		names.add(&quot;Tim&quot;);</span></span><br><span class="line"><span class="comment">//		names.add(&quot;Tommy&quot;);</span></span><br><span class="line"><span class="comment">//		names.add(&quot;aTom&quot;);</span></span><br><span class="line">		</span><br><span class="line">		ArrayList&lt;String&gt; names = <span class="keyword">new</span> ArrayList&lt;String&gt;();</span><br><span class="line">		names.add(<span class="string">&quot;Tom&quot;</span>);</span><br><span class="line">		names.add(<span class="string">&quot;Tim&quot;</span>);</span><br><span class="line">		names.add(<span class="string">&quot;Tommy&quot;</span>);</span><br><span class="line">		names.add(<span class="string">&quot;aTom&quot;</span>);</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">int</span> size = names.size();</span><br><span class="line">		System.out.println(size);</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">boolean</span> flag = names.isEmpty();</span><br><span class="line">		System.out.println(flag);</span><br><span class="line">		<span class="comment">//names.clear();//清空names的数据</span></span><br><span class="line">		flag = names.isEmpty();</span><br><span class="line">		System.out.println(flag);</span><br><span class="line">		</span><br><span class="line">		String name1 = names.get(<span class="number">0</span>);</span><br><span class="line">		System.out.println(name1);</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">for</span>(String name : names) &#123;</span><br><span class="line">			System.out.println(name);</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		System.out.println(<span class="string">&quot;##################&quot;</span>);</span><br><span class="line">		List&lt;String&gt; list = <span class="keyword">new</span> ArrayList&lt;String&gt;();</span><br><span class="line">		list.add(<span class="string">&quot;Tom&quot;</span>);</span><br><span class="line">		list.add(<span class="string">&quot;Jack&quot;</span>);</span><br><span class="line">		</span><br><span class="line">		list.add(<span class="number">0</span>, <span class="string">&quot;Bob&quot;</span>);</span><br><span class="line">		</span><br><span class="line">		list.set(<span class="number">0</span>, <span class="string">&quot;JIM&quot;</span>);</span><br><span class="line">		</span><br><span class="line">		Iterator&lt;String&gt; iterator = list.iterator();</span><br><span class="line">		<span class="keyword">while</span>(iterator.hasNext()) &#123;</span><br><span class="line">			System.out.println(iterator.next());</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>集合</category>
+      </categories>
+      <tags>
+        <tag>Java基础</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>玫瑰少年</title>
+    <url>/2022/03/19/%E7%8E%AB%E7%91%B0%E5%B0%91%E5%B9%B4/</url>
+    <content><![CDATA[<h1 id="玫瑰少年"><a href="#玫瑰少年" class="headerlink" title="玫瑰少年"></a>玫瑰少年</h1><h4 id="五月天"><a href="#五月天" class="headerlink" title="- 五月天"></a>- 五月天</h4><p>谁把谁的灵魂 装进谁的身体<br>谁把谁的身体 变成囹圄囚禁自己<br>乱世总是最 不缺耳语<br>哪种美丽会 换来妒忌<br>你并没有罪 有罪是这世界<br>生而为人无罪 你不需要抱歉<br>ONE day I wIll be you baby boy and you Gon’be me<br>喧哗如果不停 让我陪你安静<br>I wIsh I could hug you tIll you’re really really being free<br>哪朵玫瑰没有荆棘<br>最好的 报复是 美丽<br>最美的 盛开是 反击<br>别让谁去 改变了你<br>你是你 或是妳 都行<br>会有人 全心的 爱你<br>试着想像 you swItched to hIs body<br>SeXualIty 当心什么会伤你<br>多少次的重伤 多少次的冷语<br>Drowning 谁会拉你<br>Dreaming 谁会陪你<br>Same s**t happens every day<br>你离开后 世界可改变<br>多少无知罪愆 事过不境迁<br>永志不忘纪念 往事不如烟<br>生而为人无罪 你不需要抱歉<br>ONE day I wIll be you baby boy and you Gon’be me<br>喧哗如果不停 让我陪你安静<br>I wIsh I could hug you tIll you’re really really being free<br>哪朵玫瑰没有荆棘<br>最好的 报复是 美丽<br>最美的 盛开是 反击<br>别让谁去 改变了你<br>你是你 或是妳 都行<br>会有人 全心的 爱你<br>玫瑰少年 在我心里<br>绽放着 鲜艳的 传奇<br>我们都 从来没 忘记<br>你的控诉 没有声音<br>却倾诉 更多的 真理<br>却唤醒 无数的 真心<br>哪朵玫瑰没有荆棘<br>最好的 报复是 美丽<br>最美的 盛开是 反击<br>别让谁去 改变了你<br>你是你 或是妳 都行<br>会有人 全心的 爱你<br>玫瑰少年 在我心里<br>玫瑰少年 在我心里</p>
+]]></content>
+      <tags>
+        <tag>五月天</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>学习日记（for循环增强）</title>
+    <url>/2021/10/07/%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0%EF%BC%88for%E5%BE%AA%E7%8E%AF%E5%A2%9E%E5%BC%BA%EF%BC%89/</url>
+    <content><![CDATA[<h1 id="增强for循环：简化迭代器书写"><a href="#增强for循环：简化迭代器书写" class="headerlink" title="增强for循环：简化迭代器书写"></a>增强for循环：简化迭代器书写</h1><h2 id="一、增强for循环的简单实例"><a href="#一、增强for循环的简单实例" class="headerlink" title="一、增强for循环的简单实例"></a>一、增强for循环的简单实例</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">	    <span class="keyword">int</span> arr[] = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line">	    <span class="comment">/**</span></span><br><span class="line"><span class="comment">	    *增强for</span></span><br><span class="line"><span class="comment">	    */</span></span><br><span class="line">	    <span class="keyword">for</span>(<span class="keyword">int</span> num : arr)&#123;</span><br><span class="line">	     System.out.println(num);</span><br><span class="line">	    &#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="二、增强for循环的几种应用场景"><a href="#二、增强for循环的几种应用场景" class="headerlink" title="二、增强for循环的几种应用场景"></a>二、增强for循环的几种应用场景</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> *增强for</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo</span></span>&#123;</span><br><span class="line"><span class="comment">//数组的简单应用</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test1</span><span class="params">()</span></span>&#123;</span><br><span class="line">		<span class="keyword">int</span> arr[] = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> num : arr)&#123;</span><br><span class="line">			System.out.println(num);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//链表的简单应用</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test2</span><span class="params">()</span></span>&#123;</span><br><span class="line">		List list = <span class="keyword">new</span> ArrayList();</span><br><span class="line">		list.add(<span class="number">1</span>);</span><br><span class="line">		list.add(<span class="number">2</span>);</span><br><span class="line">		list.add(<span class="number">3</span>);</span><br><span class="line">		<span class="keyword">for</span>(Object obj : list)&#123;</span><br><span class="line">			 <span class="keyword">int</span> i = (Integer)obj;</span><br><span class="line">			 System.out.println(i);</span><br><span class="line">		&#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//map的应用实例</span></span><br><span class="line">	<span class="comment">//传统方式1</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test3</span><span class="params">()</span></span>&#123;</span><br><span class="line">		Map map = <span class="keyword">new</span> LinkedHashMap();<span class="comment">//不同于HashMap的无顺序形式</span></span><br><span class="line">		map.put(<span class="string">&quot;1&quot;</span>,<span class="string">&quot;aaa&quot;</span>);</span><br><span class="line">		map.put(<span class="string">&quot;2&quot;</span>,<span class="string">&quot;bbb&quot;</span>);</span><br><span class="line">		map.put(<span class="string">&quot;3&quot;</span>,<span class="string">&quot;ccc&quot;</span>);</span><br><span class="line">		</span><br><span class="line">		Set set = map.keySet();</span><br><span class="line">		Iterator  it = set.iterator();</span><br><span class="line">		<span class="keyword">while</span>(it.hasNext())&#123;</span><br><span class="line">			String key = (String)it.next();</span><br><span class="line">			String value = (String)map.get(key);</span><br><span class="line">			System.out.println(key + <span class="string">&quot;=&quot;</span> + value);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//传统方式2</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test4</span><span class="params">()</span></span>&#123;</span><br><span class="line">	Map map = <span class="keyword">new</span> LinkedHashMap();</span><br><span class="line">	map.put(<span class="string">&quot;1&quot;</span>,<span class="string">&quot;aaa&quot;</span>);</span><br><span class="line">	map.put(<span class="string">&quot;2&quot;</span>,<span class="string">&quot;bbb&quot;</span>);</span><br><span class="line">	map.put(<span class="string">&quot;3&quot;</span>,<span class="string">&quot;ccc&quot;</span>);</span><br><span class="line">	</span><br><span class="line">	Set set = map.entrySet();</span><br><span class="line">	Iterator  it = set.iterator();</span><br><span class="line">	<span class="keyword">while</span>(it.hasNext())&#123;</span><br><span class="line">		Map.Entry entry = (Entry)it.next();</span><br><span class="line">		String key = (String)entry.getKey();</span><br><span class="line">		String value = (String)entry.getValue();</span><br><span class="line">		System.out.println(key + <span class="string">&quot;=&quot;</span> + value);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//增强for循环应用于map的第一种方法</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test5</span><span class="params">()</span></span>&#123;</span><br><span class="line">	Map map = <span class="keyword">new</span> LinkedHashMap();</span><br><span class="line">	map.put(<span class="string">&quot;1&quot;</span>,<span class="string">&quot;aaa&quot;</span>);</span><br><span class="line">	map.put(<span class="string">&quot;2&quot;</span>,<span class="string">&quot;bbb&quot;</span>);</span><br><span class="line">	map.put(<span class="string">&quot;3&quot;</span>,<span class="string">&quot;ccc&quot;</span>);</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">for</span>(Object obj : map.keySet())&#123;</span><br><span class="line">		String key = (String) obj;</span><br><span class="line">		Stringg value = (String) map.get(key);</span><br><span class="line">		System.out.println(key + <span class="string">&quot;=&quot;</span> + value);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">	<span class="comment">//增强for循环应用于map的第二种方法</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test5</span><span class="params">()</span></span>&#123;</span><br><span class="line">		Map map = <span class="keyword">new</span> LinkedHashMap();</span><br><span class="line">		map.put(<span class="string">&quot;1&quot;</span>,<span class="string">&quot;aaa&quot;</span>);</span><br><span class="line">		map.put(<span class="string">&quot;2&quot;</span>,<span class="string">&quot;bbb&quot;</span>);</span><br><span class="line">		map.put(<span class="string">&quot;3&quot;</span>,<span class="string">&quot;ccc&quot;</span>);</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">for</span>(Object obj : map.entrySet())&#123;</span><br><span class="line">			Map.Entry entry = (entry) obj;</span><br><span class="line">			String key = (String) entry.getKey();</span><br><span class="line">			Stringg value = (String) entry.getVnalue();</span><br><span class="line">			System.out.println(key + <span class="string">&quot;=&quot;</span> + value);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="三、增强for循环需要注意的问题"><a href="#三、增强for循环需要注意的问题" class="headerlink" title="三、增强for循环需要注意的问题"></a>三、增强for循环需要注意的问题</h2><p>1.只适合取数据，不能更改数据；</p>
+<p>2.只用于数组，或实现Iterable接口的集合类上；set，list。</p>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>Java基础</tag>
       </tags>
   </entry>
   <entry>
