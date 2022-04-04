@@ -123,44 +123,6 @@
       </tags>
   </entry>
   <entry>
-    <title>JavaWeb基础知识</title>
-    <url>/2021/10/24/JavaWeb%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</url>
-    <content><![CDATA[<h2 id="Junit"><a href="#Junit" class="headerlink" title="Junit"></a>Junit</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">* 测试分类：</span><br><span class="line">	1. 黑盒测试：不需要写代码，给输入值，看程序是否能够输出期望的值。</span><br><span class="line">	2. 白盒测试：需要写代码的。关注程序具体的执行流程。</span><br><span class="line"></span><br><span class="line">* Junit使用：白盒测试</span><br><span class="line">	* 步骤：</span><br><span class="line">		1. 定义一个测试类(测试用例)</span><br><span class="line">			* 建议：</span><br><span class="line">				* 测试类名：被测试的类名Test		CalculatorTest</span><br><span class="line">				* 包名：xxx.xxx.xx.test		cn.itcast.test</span><br><span class="line"></span><br><span class="line">		2. 定义测试方法：可以独立运行</span><br><span class="line">			* 建议：</span><br><span class="line">				* 方法名：test测试的方法名		testAdd()  </span><br><span class="line">				* 返回值：void</span><br><span class="line">				* 参数列表：空参</span><br><span class="line"></span><br><span class="line">		3. 给方法加@Test</span><br><span class="line">		4. 导入junit依赖环境</span><br><span class="line"></span><br><span class="line">	* 判定结果：</span><br><span class="line">		* 红色：失败</span><br><span class="line">		* 绿色：成功</span><br><span class="line">		* 一般我们会使用断言操作来处理结果</span><br><span class="line">			* Assert.assertEquals(期望的结果,运算的结果);</span><br><span class="line"></span><br><span class="line">	* 补充：</span><br><span class="line">		* @Before:</span><br><span class="line">			* 修饰的方法会在测试方法之前被自动执行</span><br><span class="line">		* @After:</span><br><span class="line">			* 修饰的方法会在测试方法执行之后自动被执行</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>JavaWeb基础</category>
-      </categories>
-      <tags>
-        <tag>JavaWeb基础</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java基础问题合集</title>
-    <url>/2021/10/17/Java%E5%9F%BA%E7%A1%80%E9%97%AE%E9%A2%98%E5%90%88%E9%9B%86/</url>
-    <content><![CDATA[<h4 id="问题合集："><a href="#问题合集：" class="headerlink" title="问题合集："></a>问题合集：</h4><h5 id="什么是泛型？"><a href="#什么是泛型？" class="headerlink" title="什么是泛型？"></a>什么是泛型？</h5><p>  答：泛型：即“参数化类型”。一提到参数，最熟悉的就是定义方法时有形参，然后调用此方法时传递实参。那么参数化类型怎么理解呢？顾名思义，就是将类型由原来的具体的类型参数化，类似于方法中的变量参数，此时类型也定义成参数形式（可以称之为类型形参），然后在使用/调用时传入具体的类型（类型实参）。<br>泛型的本质：是为了参数化类型（在不创建新的类型的情况下，通过泛型指定的不同类型来控制形参具体限制的类型）。也就是说在泛型使用过程中，操作的数据类型被指定为一个参数，这种参数类型可以用在类、接口和方法中，分别被称为泛型类、泛型接口、泛型方法。</p>
-<h5 id="Collection-Set-List"><a href="#Collection-Set-List" class="headerlink" title="Collection(Set   List)"></a>Collection(Set   List)</h5><p>Set的接口继承Collection接口，而且不允许集合中存在重复项。</p>
-<p>List接口继承了Collection接口以定义一个允许重复项的有序集合。</p>
-<p>Set：搜索元素效率低下，删除和插入的效率高，插入和删除不会引起元素的位置变化。</p>
-<p>List：和数组类似，List可以动态增长，查找元素的效率较高，插入元素和删除元素效率低，因为会引起其他元素位置发生变化。</p>
-<p>Set 和 List的具体子类：</p>
-<p>Set</p>
-<pre><code> ----HashSet：以哈希表的形式存放元素，插入删除速度很快
-</code></pre>
-<p>List：</p>
-<pre><code> ----ArrayList :动态数组
-
- ----LinkedList:链表，队列，堆栈
-</code></pre>
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>Java基础</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Java集合详解</title>
     <url>/2021/10/11/Java%E9%9B%86%E5%90%88%E8%AF%A6%E8%A7%A3/</url>
     <content><![CDATA[<h4 id="表-1-Java集合接口的作用"><a href="#表-1-Java集合接口的作用" class="headerlink" title="表 1 Java集合接口的作用"></a>表 1 Java集合接口的作用</h4><table>
@@ -245,6 +207,44 @@
       </tags>
   </entry>
   <entry>
+    <title>JavaWeb基础知识</title>
+    <url>/2021/10/24/JavaWeb%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</url>
+    <content><![CDATA[<h2 id="Junit"><a href="#Junit" class="headerlink" title="Junit"></a>Junit</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">* 测试分类：</span><br><span class="line">	1. 黑盒测试：不需要写代码，给输入值，看程序是否能够输出期望的值。</span><br><span class="line">	2. 白盒测试：需要写代码的。关注程序具体的执行流程。</span><br><span class="line"></span><br><span class="line">* Junit使用：白盒测试</span><br><span class="line">	* 步骤：</span><br><span class="line">		1. 定义一个测试类(测试用例)</span><br><span class="line">			* 建议：</span><br><span class="line">				* 测试类名：被测试的类名Test		CalculatorTest</span><br><span class="line">				* 包名：xxx.xxx.xx.test		cn.itcast.test</span><br><span class="line"></span><br><span class="line">		2. 定义测试方法：可以独立运行</span><br><span class="line">			* 建议：</span><br><span class="line">				* 方法名：test测试的方法名		testAdd()  </span><br><span class="line">				* 返回值：void</span><br><span class="line">				* 参数列表：空参</span><br><span class="line"></span><br><span class="line">		3. 给方法加@Test</span><br><span class="line">		4. 导入junit依赖环境</span><br><span class="line"></span><br><span class="line">	* 判定结果：</span><br><span class="line">		* 红色：失败</span><br><span class="line">		* 绿色：成功</span><br><span class="line">		* 一般我们会使用断言操作来处理结果</span><br><span class="line">			* Assert.assertEquals(期望的结果,运算的结果);</span><br><span class="line"></span><br><span class="line">	* 补充：</span><br><span class="line">		* @Before:</span><br><span class="line">			* 修饰的方法会在测试方法之前被自动执行</span><br><span class="line">		* @After:</span><br><span class="line">			* 修饰的方法会在测试方法执行之后自动被执行</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>JavaWeb基础</category>
+      </categories>
+      <tags>
+        <tag>JavaWeb基础</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java基础问题合集</title>
+    <url>/2021/10/17/Java%E5%9F%BA%E7%A1%80%E9%97%AE%E9%A2%98%E5%90%88%E9%9B%86/</url>
+    <content><![CDATA[<h4 id="问题合集："><a href="#问题合集：" class="headerlink" title="问题合集："></a>问题合集：</h4><h5 id="什么是泛型？"><a href="#什么是泛型？" class="headerlink" title="什么是泛型？"></a>什么是泛型？</h5><p>  答：泛型：即“参数化类型”。一提到参数，最熟悉的就是定义方法时有形参，然后调用此方法时传递实参。那么参数化类型怎么理解呢？顾名思义，就是将类型由原来的具体的类型参数化，类似于方法中的变量参数，此时类型也定义成参数形式（可以称之为类型形参），然后在使用/调用时传入具体的类型（类型实参）。<br>泛型的本质：是为了参数化类型（在不创建新的类型的情况下，通过泛型指定的不同类型来控制形参具体限制的类型）。也就是说在泛型使用过程中，操作的数据类型被指定为一个参数，这种参数类型可以用在类、接口和方法中，分别被称为泛型类、泛型接口、泛型方法。</p>
+<h5 id="Collection-Set-List"><a href="#Collection-Set-List" class="headerlink" title="Collection(Set   List)"></a>Collection(Set   List)</h5><p>Set的接口继承Collection接口，而且不允许集合中存在重复项。</p>
+<p>List接口继承了Collection接口以定义一个允许重复项的有序集合。</p>
+<p>Set：搜索元素效率低下，删除和插入的效率高，插入和删除不会引起元素的位置变化。</p>
+<p>List：和数组类似，List可以动态增长，查找元素的效率较高，插入元素和删除元素效率低，因为会引起其他元素位置发生变化。</p>
+<p>Set 和 List的具体子类：</p>
+<p>Set</p>
+<pre><code> ----HashSet：以哈希表的形式存放元素，插入删除速度很快
+</code></pre>
+<p>List：</p>
+<pre><code> ----ArrayList :动态数组
+
+ ----LinkedList:链表，队列，堆栈
+</code></pre>
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>Java基础</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>List集合中方法总结</title>
     <url>/2021/10/10/List%E9%9B%86%E5%90%88%E4%B8%AD%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93/</url>
     <content><![CDATA[<h1 id="List集合常用方法"><a href="#List集合常用方法" class="headerlink" title="List集合常用方法"></a>List集合常用方法</h1><p>由于List集合中的ArrayList与LinkedList都是List接口的实现类，所以他们中定义的方法基本上是一样的，因此只以其中一种举例。</p>
@@ -320,7 +320,7 @@
 <ul>
 <li>可能报错:</li>
 </ul>
-<p><img src="./Redis/1.png"></p>
+<p><img src="Redis/1.png"></p>
 <ul>
 <li>解决方法：make distclean 后重新编译</li>
 </ul>
@@ -493,61 +493,6 @@
       </categories>
       <tags>
         <tag>Java基础</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>面向对象和面向过程的区别</title>
-    <url>/2021/10/09/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%92%8C%E9%9D%A2%E5%90%91%E8%BF%87%E7%A8%8B%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
-    <content><![CDATA[<h1 id="一-面向过程与面向对象对比"><a href="#一-面向过程与面向对象对比" class="headerlink" title="一.面向过程与面向对象对比"></a>一.面向过程与面向对象对比</h1><p>​         面向过程：强调的是每一个功能的步骤，有很多很多方法组成，这些方法相互调用，完成需求。<br>​         面向对象：强调的是对象，然后由对象去调用功能。</p>
-<p>​         面向过程：如果做小的项目，则效率非常高，很快就能实现，但是后期维护非常麻烦。<br>　 　面向对象：如果做大的项目，则效率相对会低，但是代码结构性很好，后期维护容易。从这个方面来说，效率反而提高了。</p>
-<h1 id="二-以面向对象为主，对比面向过程说明面向对象的思想特点"><a href="#二-以面向对象为主，对比面向过程说明面向对象的思想特点" class="headerlink" title="二.以面向对象为主，对比面向过程说明面向对象的思想特点"></a>二.以面向对象为主，对比面向过程说明面向对象的思想特点</h1><p>示例：把大象装进冰箱<br>       面向过程：<br>                     分三步：</p>
-<p>​                        1.打开冰箱门</p>
-<p>​                        2.装进大象</p>
-<p>​                        3.关闭冰箱门</p>
-<p>代码示例：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Demo</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">/*</span></span><br><span class="line"><span class="comment">        System.out.println(&quot;打开冰箱门&quot;);</span></span><br><span class="line"><span class="comment">        //打开冰箱门的动作，现在仅仅是为了演示，就写了一个输出语句，其实，它可能需要做很多操作。这个时候代码就比较多一些了。</span></span><br><span class="line"><span class="comment">        //假设我要多次打开冰箱门，代码一多，每次都写一遍，麻烦不？</span></span><br><span class="line"><span class="comment">        //我们就应该用方法改进。</span></span><br><span class="line"><span class="comment">        System.out.println(&quot;装进大象&quot;);</span></span><br><span class="line"><span class="comment">        System.out.println(&quot;关闭冰箱门&quot;);</span></span><br><span class="line"><span class="comment">        */</span>        </span><br><span class="line">        <span class="comment">//写了方法以后，调用就改变了。</span></span><br><span class="line">        open();</span><br><span class="line">        in();</span><br><span class="line">        close();</span><br><span class="line">    </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">open</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;打开冰箱门&quot;</span>);</span><br><span class="line">&#125;    </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">in</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;装进大象&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">close</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;关闭冰箱门&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>   面向对象：</p>
-<p>​              我们怎么才能更符合面向对象思想呢？</p>
-<p>　　　　　   1:有哪些类呢？<br>　　　　　　2:每个类有哪些东西呢？<br>　　　　　　3:类与类之间的关系是什么呢？</p>
-<p>　　　　把大象装进冰箱的分析？(如何分析有哪些类呢？答：名词提取法)<br>　　　　　　A:有哪些类呢？<br>　　　　　　　　大象类<br>　　　　　　　　冰箱类<br>　　　　　　　　Demo类<br>　　　　　　B:每个类有哪些东西呢？<br>　　　　　　　　大象类：<br>　　　　　　　　　　进去<br>　　　　　　　　冰箱类：<br>　　　　　　　　　　开门<br>　　　　　　　　　　关门<br>　　　　　　　　Demo类:<br>　　　　　　　　　　main方法<br>　　　　　　C:类与类之间的关系是什么呢？<br>　　　　　　　　Demo类中使用大象类和冰箱类的功能。</p>
-<p>代码示例：</p>
-<p>大象类（进去）：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> 大象 </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">in</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;装进大象&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>  冰箱类（开关门）：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">class 冰箱 &#123;</span><br><span class="line">    public static void open() &#123;</span><br><span class="line">        System.out.println(&quot;打开冰箱门&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">                </span><br><span class="line"></span><br><span class="line">public static void close() &#123;</span><br><span class="line">    System.out.println(&quot;关闭冰箱门&quot;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>Demo类（main()调用大象类和冰箱类）：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Demo</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">             冰箱.open();<span class="comment">//冰箱类调用开门方法</span></span><br><span class="line"></span><br><span class="line">             大象.in();大象类调用进去方法</span><br><span class="line">             冰箱.close();冰箱类调用关门方法 </span><br><span class="line">            &#125; </span><br><span class="line">          &#125;</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>Java基础</category>
-      </categories>
-      <tags>
-        <tag>Java基础</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>面试内容总结</title>
-    <url>/2021/10/05/%E9%9D%A2%E8%AF%95%E5%86%85%E5%AE%B9%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<h1 id="面试题01"><a href="#面试题01" class="headerlink" title="面试题01"></a>面试题01</h1><p>请你自我介绍一下你自己：</p>
-<p>回答提示：</p>
-<p>1、一般人回答这个问题过于平常，只说姓名、年龄、爱好、工作经验，这些在简历上都有，其实，企业最希望知道的是求职者能否胜任工作，包括：最强的技能、最深入研究的知识领域、个性中最积极的部分、做过的最成功的事，主要的成就等，这些都可以</p>
-<p>2、和学习无关，也可以和学习有关，但要突出积极的个性和做事的能力，说得合情合理企业才会相信。企业很重视一个人的礼貌，求职者要尊重考官，在回答每个问题之后都说一句“谢谢”。企业喜欢有礼貌的求职者。</p>
-<p>范例;</p>
-<p>考官好，我是计算机专业的面试者xxx，我此次应聘的职位是IT行业的软件工程师，这份工作不仅与我的专业对口，同时也是我的特长与兴趣所在。现在我就从以下三个方面介绍自己：</p>
-<p>​        1)学习能力：我有较强的科研能力，能熟练的使用‘eclipse’、‘idea’等编程相关软件，熟练并掌握MySQL数据库、Spring Boot框架等。</p>
-<p>​        2)实践能力：我的专长是软件开发，我希望能从事这方面的工作经验，并且我曾经发过多个系统，如人事档案管理系统,工资管理系统等等。</p>
-<p>​        3)交际能力：我的性格沉稳，能坐得住，对IT行业的工作，具有非常好的适应能力，而且为人谦和，具有很强的组织和协调能力 ，富有的事业心和责任感使我能够面对任何困难和挑战。</p>
-<p>　　从以上的简单自我介绍，我希望公司能给我一个展示自己能力的机会，让我我可以学以致用，同时我也很欣赏XX公司的企业文化与工作环境。我愿意成为企业一员，为企业的发展贡献自己的一份力量。 我的职业生涯目标是，做一个既懂技术，又懂业务的复合型人才。</p>
-]]></content>
-      <categories>
-        <category>面试</category>
-      </categories>
-      <tags>
-        <tag>面试题</tag>
       </tags>
   </entry>
   <entry>
@@ -1771,6 +1716,61 @@
       </categories>
       <tags>
         <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>面向对象和面向过程的区别</title>
+    <url>/2021/10/09/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%92%8C%E9%9D%A2%E5%90%91%E8%BF%87%E7%A8%8B%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
+    <content><![CDATA[<h1 id="一-面向过程与面向对象对比"><a href="#一-面向过程与面向对象对比" class="headerlink" title="一.面向过程与面向对象对比"></a>一.面向过程与面向对象对比</h1><p>​         面向过程：强调的是每一个功能的步骤，有很多很多方法组成，这些方法相互调用，完成需求。<br>​         面向对象：强调的是对象，然后由对象去调用功能。</p>
+<p>​         面向过程：如果做小的项目，则效率非常高，很快就能实现，但是后期维护非常麻烦。<br>　 　面向对象：如果做大的项目，则效率相对会低，但是代码结构性很好，后期维护容易。从这个方面来说，效率反而提高了。</p>
+<h1 id="二-以面向对象为主，对比面向过程说明面向对象的思想特点"><a href="#二-以面向对象为主，对比面向过程说明面向对象的思想特点" class="headerlink" title="二.以面向对象为主，对比面向过程说明面向对象的思想特点"></a>二.以面向对象为主，对比面向过程说明面向对象的思想特点</h1><p>示例：把大象装进冰箱<br>       面向过程：<br>                     分三步：</p>
+<p>​                        1.打开冰箱门</p>
+<p>​                        2.装进大象</p>
+<p>​                        3.关闭冰箱门</p>
+<p>代码示例：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Demo</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">/*</span></span><br><span class="line"><span class="comment">        System.out.println(&quot;打开冰箱门&quot;);</span></span><br><span class="line"><span class="comment">        //打开冰箱门的动作，现在仅仅是为了演示，就写了一个输出语句，其实，它可能需要做很多操作。这个时候代码就比较多一些了。</span></span><br><span class="line"><span class="comment">        //假设我要多次打开冰箱门，代码一多，每次都写一遍，麻烦不？</span></span><br><span class="line"><span class="comment">        //我们就应该用方法改进。</span></span><br><span class="line"><span class="comment">        System.out.println(&quot;装进大象&quot;);</span></span><br><span class="line"><span class="comment">        System.out.println(&quot;关闭冰箱门&quot;);</span></span><br><span class="line"><span class="comment">        */</span>        </span><br><span class="line">        <span class="comment">//写了方法以后，调用就改变了。</span></span><br><span class="line">        open();</span><br><span class="line">        in();</span><br><span class="line">        close();</span><br><span class="line">    </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">open</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;打开冰箱门&quot;</span>);</span><br><span class="line">&#125;    </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">in</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;装进大象&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">close</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;关闭冰箱门&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>   面向对象：</p>
+<p>​              我们怎么才能更符合面向对象思想呢？</p>
+<p>　　　　　   1:有哪些类呢？<br>　　　　　　2:每个类有哪些东西呢？<br>　　　　　　3:类与类之间的关系是什么呢？</p>
+<p>　　　　把大象装进冰箱的分析？(如何分析有哪些类呢？答：名词提取法)<br>　　　　　　A:有哪些类呢？<br>　　　　　　　　大象类<br>　　　　　　　　冰箱类<br>　　　　　　　　Demo类<br>　　　　　　B:每个类有哪些东西呢？<br>　　　　　　　　大象类：<br>　　　　　　　　　　进去<br>　　　　　　　　冰箱类：<br>　　　　　　　　　　开门<br>　　　　　　　　　　关门<br>　　　　　　　　Demo类:<br>　　　　　　　　　　main方法<br>　　　　　　C:类与类之间的关系是什么呢？<br>　　　　　　　　Demo类中使用大象类和冰箱类的功能。</p>
+<p>代码示例：</p>
+<p>大象类（进去）：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> 大象 </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">in</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;装进大象&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>  冰箱类（开关门）：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">class 冰箱 &#123;</span><br><span class="line">    public static void open() &#123;</span><br><span class="line">        System.out.println(&quot;打开冰箱门&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">                </span><br><span class="line"></span><br><span class="line">public static void close() &#123;</span><br><span class="line">    System.out.println(&quot;关闭冰箱门&quot;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Demo类（main()调用大象类和冰箱类）：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Demo</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">             冰箱.open();<span class="comment">//冰箱类调用开门方法</span></span><br><span class="line"></span><br><span class="line">             大象.in();大象类调用进去方法</span><br><span class="line">             冰箱.close();冰箱类调用关门方法 </span><br><span class="line">            &#125; </span><br><span class="line">          &#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>Java基础</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>面试内容总结</title>
+    <url>/2021/10/05/%E9%9D%A2%E8%AF%95%E5%86%85%E5%AE%B9%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<h1 id="面试题01"><a href="#面试题01" class="headerlink" title="面试题01"></a>面试题01</h1><p>请你自我介绍一下你自己：</p>
+<p>回答提示：</p>
+<p>1、一般人回答这个问题过于平常，只说姓名、年龄、爱好、工作经验，这些在简历上都有，其实，企业最希望知道的是求职者能否胜任工作，包括：最强的技能、最深入研究的知识领域、个性中最积极的部分、做过的最成功的事，主要的成就等，这些都可以</p>
+<p>2、和学习无关，也可以和学习有关，但要突出积极的个性和做事的能力，说得合情合理企业才会相信。企业很重视一个人的礼貌，求职者要尊重考官，在回答每个问题之后都说一句“谢谢”。企业喜欢有礼貌的求职者。</p>
+<p>范例;</p>
+<p>考官好，我是计算机专业的面试者xxx，我此次应聘的职位是IT行业的软件工程师，这份工作不仅与我的专业对口，同时也是我的特长与兴趣所在。现在我就从以下三个方面介绍自己：</p>
+<p>​        1)学习能力：我有较强的科研能力，能熟练的使用‘eclipse’、‘idea’等编程相关软件，熟练并掌握MySQL数据库、Spring Boot框架等。</p>
+<p>​        2)实践能力：我的专长是软件开发，我希望能从事这方面的工作经验，并且我曾经发过多个系统，如人事档案管理系统,工资管理系统等等。</p>
+<p>​        3)交际能力：我的性格沉稳，能坐得住，对IT行业的工作，具有非常好的适应能力，而且为人谦和，具有很强的组织和协调能力 ，富有的事业心和责任感使我能够面对任何困难和挑战。</p>
+<p>　　从以上的简单自我介绍，我希望公司能给我一个展示自己能力的机会，让我我可以学以致用，同时我也很欣赏XX公司的企业文化与工作环境。我愿意成为企业一员，为企业的发展贡献自己的一份力量。 我的职业生涯目标是，做一个既懂技术，又懂业务的复合型人才。</p>
+]]></content>
+      <categories>
+        <category>面试</category>
+      </categories>
+      <tags>
+        <tag>面试题</tag>
       </tags>
   </entry>
 </search>
