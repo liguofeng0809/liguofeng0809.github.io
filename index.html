@@ -216,7 +216,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-04-07 15:49:27" itemprop="dateModified" datetime="2022-04-07T15:49:27+08:00">2022-04-07</time>
+      <time title="Modified: 2022-04-13 21:19:17" itemprop="dateModified" datetime="2022-04-13T21:19:17+08:00">2022-04-13</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -290,7 +290,10 @@
 <p>3.启动后台redis 与关闭</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">//进入/usr/local/bin目录</span><br><span class="line">cd /usr/local/bin</span><br><span class="line">//启动redis</span><br><span class="line">redis-server /copy_redis/redis.conf</span><br><span class="line">//查看redis进程</span><br><span class="line">ps -ef | grep redis</span><br><span class="line">//访问redis</span><br><span class="line">redis-cli</span><br><span class="line">//关闭redis</span><br><span class="line">redis-cli shutdown  ||  kill -9 进程号（如图）  ||  redis-cli -p63</span><br></pre></td></tr></table></figure>
 
-<p><img src="r9yjjkxiu.hd-bkt.clouddn.com/img/202204071517846.png" alt="image-20220327232148448"></p>
+<img src="http://r9yjjkxiu.hd-bkt.clouddn.com/img/202204132118202.png" alt="image-20220413211822898"  />
+
+
+
 <h2 id="2-redis-conf配置文件的修改"><a href="#2-redis-conf配置文件的修改" class="headerlink" title="2.redis.conf配置文件的修改"></a>2.redis.conf配置文件的修改</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// 修改/copy_redis中的redis.conf</span><br><span class="line">cd /copy_redis</span><br><span class="line">// 使用vi编辑器进入redis.conf</span><br><span class="line">vi redis.conf</span><br></pre></td></tr></table></figure>
 
 <ul>
